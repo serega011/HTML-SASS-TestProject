@@ -1,0 +1,9 @@
+{
+  "name": "TestGulp",
+  "description": "",
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.0"
+  }
+}
