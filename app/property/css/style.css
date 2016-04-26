@@ -219,6 +219,7 @@ body {
       color: #9fca38;
       font-weight: bold; }
     .sidebar_info_adress {
+      margin-top: 5px;
       font-size: 13px;
       color: #999; }
 
@@ -630,3 +631,14 @@ body {
 
 .contact .phone i {
   background: url(../img/settings-icon.png) no-repeat -108px; }
+
+.footer {
+  background: #333;
+  min-width: 1020px;
+  padding: 50px 0;
+  margin-top: 30px;
+  color: #999;
+  font-size: 13px;
+  text-align: center; }
+  .footer .copyright {
+    padding: 10px; }
