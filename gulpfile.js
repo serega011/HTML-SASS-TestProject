@@ -9,7 +9,7 @@ var gulp         = require('gulp'),
 /* Next tasks for main_page app*/
 
 gulp.task('sass', function () {
-  return gulp.src('app/main_page/sass/*.scss')
+  return gulp.src('app/sass/*.scss')
     .pipe(sass({
       includePaths: require('node-bourbon').includePaths
     }).on('error', sass.logError))
@@ -17,63 +17,44 @@ gulp.task('sass', function () {
 			browsers: ['last 3 versions'],
 			cascade: false
 		}))
-    .pipe(gulp.dest('app/main_page/css'))
+    .pipe(gulp.dest('app/css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('min', function() {
-  return gulp.src('app/main_page/css/*.css')
+  return gulp.src('app/css/*.css')
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(rename({suffix: '.min', prefix : ''}))
 
-    .pipe(gulp.dest('build/main_page/css'));
+    .pipe(gulp.dest('build/css'));
 });
 
-
-gulp.task('main_page', ['sass'], function() {
+/*Start server with main page*/
+gulp.task('main', ['sass'], function() {
 
     browserSync.init({
-        server: "./app/main_page"
+        server: {
+            baseDir: "./app",
+            index: "main.html"
+        }
     });
 
-    gulp.watch("app/main_page/sass/*.scss", ['sass']);
-    gulp.watch("app/main_page/*.html").on('change', browserSync.reload);
-    gulp.watch("app/main_page/css/*.css",['min']);
+    gulp.watch("app/sass/*.scss", ['sass']);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("app/css/*.css",['min']);
 });
 
-/*Next tasks for property app*/
-
-gulp.task('sass1', function () {
-  return gulp.src('app/property/sass/*.scss')
-    .pipe(sass({
-      includePaths: require('node-bourbon').includePaths
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
-            cascade: false
-        }))
-    .pipe(gulp.dest('app/property/css'))
-    .pipe(browserSync.stream());
-});
-
-gulp.task('min1', function() {
-  return gulp.src('app/property/css/*.css')
-    .pipe(minifyCss({compatibility: 'ie8'}))
-    .pipe(rename({suffix: '.min', prefix : ''}))
-
-    .pipe(gulp.dest('build/property/css'));
-});
-
-
-gulp.task('property', ['sass1'], function() {
+/*start server for property page*/
+gulp.task('property', ['sass'], function() {
 
     browserSync.init({
-        server: "./app/property"
+        server: "./app",
+        index: "property.html"
     });
 
-    gulp.watch("app/property/sass/*.scss", ['sass1']);
-    gulp.watch("app/property/*.html").on('change', browserSync.reload);
-    gulp.watch("app/property/css/*.css",['min']);
+    gulp.watch("app/sass/*.scss", ['sass']);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("app/css/*.css",['min']);
 });
 
-gulp.task('default',['serve1']);
+gulp.task('default',['main']);
