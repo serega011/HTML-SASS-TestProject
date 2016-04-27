@@ -60,8 +60,9 @@ $contur: #c5c5c5;
     display: block;
 }
 .wrap{
-    width:1020px;
+    width:1040px;
     margin:0 auto;
+    padding:0 10px;
 }
 
 /* Header */
@@ -70,7 +71,7 @@ $contur: #c5c5c5;
     background:$rear;
     text-align:center;
     border-bottom:5px solid #e0e0e0;
-    min-width:1020px;
+    min-width:1040px;
     .wrap{
         padding:2px 20px;
     }
@@ -195,13 +196,27 @@ $contur: #c5c5c5;
     width:10px;
     border-radius:5px;
 }
+        .add_button{
+            font-size:12px;
+            border:1px solid $contur;
+            background:$rear;
+            padding:0px 10px 6px 10px;
+            border-radius:3px;
+            text-align:center;
+            outline:none;
+            float:right;
+            .plus{
+                display:inline-block;
+                width:20px;
+                height:20px;
+                background:url(../img/plus.png) 0 0 no-repeat;
+                position:relative;
+                top:4px;
+                margin-right:5px;
+            }
+        }
 .sidebar{
     display:block;
-  /*   float:left;
-    height:830px;
-    width:330px;
-    overflow-y:scroll; */
-    
     &_top{
         width:330px;
         margin:20px 0 10px 10px;
@@ -211,24 +226,6 @@ $contur: #c5c5c5;
             display:inline-block;
             width:130px;
             line-height:2.1em;
-        }
-
-        &_button{
-            font-size:12px;
-            border:1px solid $contur;
-            background:$rear;
-            padding:0px 15px 5px 10px;
-            border-radius:3px;
-            text-align:center;
-            float:right;
-            .icon-plus-circled{
-                color:$color;
-                display:inline-block;
-                font-size:24px;
-                line-height: 1.2em;
-                position:relative;
-                top:0.11em;
-            }
         }
     }
 
@@ -307,13 +304,15 @@ $contur: #c5c5c5;
         }
     }
 }
-.cost-icon{
-    span{
+.cost-icons{
+    .cost-icon{
         color:#999999;
         font-weight: bold;
-        margin-right:24px;
+        margin-left:24px;
+        &:first-child{
+            margin-left:0;
+        }
     }
-    span:nth-child(3){margin:0}
     i{
         position:relative;
         top:5px;
@@ -322,13 +321,13 @@ $contur: #c5c5c5;
         height:20px;
         margin-right:5px
     }
-    span:nth-child(1) i{
+    .icon-bed1 i{
         background:url(../img/settings-icon.png) no-repeat -38px 0;
     }
-    span:nth-child(2) i{
+    .icon-ship1 i{
         background:url(../img/settings-icon.png) no-repeat -56px 0;
     }
-    span:nth-child(3) i{
+    .icon-car1 i{
         width:18px;
         background:url(../img/settings-icon.png) no-repeat -75px 0;
     }
@@ -358,7 +357,8 @@ $contur: #c5c5c5;
     label{
     display:inline-block;
     width:80px;
-    margin:0 0 -1px 0;
+    margin-left:-5px;
+    margin-bottom: -1px;
     padding: 10px 15px;
     font-size:12px;
     text-align: center;
@@ -366,11 +366,8 @@ $contur: #c5c5c5;
     background: $rear;
     border-radius: 3px 3px 0 0;
     }
-    label:nth-of-type(2){
-        margin-left:-5px;
-    }
-    label:nth-of-type(3){
-        margin-left:-5px;
+    .first{
+        margin-left:0px;
     }
     input:checked + label {
         border: 1px solid $color;
@@ -385,14 +382,18 @@ $contur: #c5c5c5;
 }
 
 /* Expenses */
+
 .expenses,.overview,.contact{height:675px;}
 .expenses{
+    .wrap_table{
+    border:1px solid $contur;
+    border-radius:5px;
+    margin-bottom:10px;
+    }
     table{
         font-size: 13px;
         width:100%;
         text-align:left;
-        border:1px solid $contur;
-        border-radius:5px;
         td{
             padding:5px 0;
         }
@@ -441,7 +442,20 @@ $contur: #c5c5c5;
     }
     table tr:hover .edit,table tr:hover .uninstall,{opacity:1;}
     table tr:hover td{background:$rear;}
-
+    &_total{
+        margin-top:10px;
+        border-radius: 3px;
+        padding: 10px 15px 12px;
+        background: #f6f9e5;
+        &_name{
+            float:right;
+            font-weight: bold;
+            font-size:13;
+        }
+        &_amount{
+            font-size:24px;
+        }
+    }
 }
 .filter{
     position:fixed;
@@ -602,6 +616,29 @@ $contur: #c5c5c5;
         }
     }
 }
+/* Style for chosen plugin select */
+
+.chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single{
+    background:transparent;
+    font-size: 13px;
+    border: 2px solid #efefef;
+    border-radius: 2px;
+    box-shadow: 0 0 0px 1px #c5c5c5, inset 0 0 0px 1px #c5c5c5;
+}
+.chosen-container-single .chosen-single div,.chosen-container-active.chosen-with-drop .chosen-single div{
+    width:28px;
+    background:$rear;
+}
+.chosen-container-single .chosen-single div b{
+        background: url('../img/chosen-sprite.png') no-repeat 9px 2px;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -9px 2px;
+}
+.chosen-container .chosen-drop{
+    border: 2px solid #efefef;
+    border-radius: 2px;
+}
 
 /* Overview */
 .title2{
@@ -640,11 +677,11 @@ $contur: #c5c5c5;
             width:120px;
         }
 
-        tr td:nth-child(2),tr td:nth-child(4){
+        tr td.bol{
             font-weight: bold;
         }
 
-        tr td:nth-child(2){
+        tr .auto{
             width:auto;
         }
     }
@@ -654,7 +691,7 @@ $contur: #c5c5c5;
                 font-weight: normal;
                 text-align:center;
             }
-            tr:nth-child(2) td{
+            .tr_bol td{
                 font-weight:bold;
             }
         }
@@ -679,21 +716,22 @@ $contur: #c5c5c5;
     background:#f6f9e5;
     border-radius:3px;
     padding:10px 15px 12px;
-    >span{
+    .total_name,.total_name1{
         font-size: 13px;
         font-weight:bold;
     }
-    >span span{
+    .total_number,.total_number1,.total_number_black{
         position:relative;
         top:2px;
         color:$color;
         font-size: 24px;
         margin-left:10px;
     }
-    >span:last-child{
+    .total_name{
         float:right;
-        span{color:black;}
-        
+    }
+    .total_number_black{
+        color:black;
     }
 }
 
@@ -772,7 +810,7 @@ $contur: #c5c5c5;
 
 .footer{
     background:#333;
-    min-width:1020px;
+    min-width:1040px;
     padding:50px 0;
     margin-top:30px;
     color:#999;

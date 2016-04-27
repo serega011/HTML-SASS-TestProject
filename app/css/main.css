@@ -50,8 +50,9 @@ body {
 /* Color of theme */
 /* General width of container for all content */
 .wrap {
-  min-width: 956px;
-  width: 956px;
+  min-width: 976px;
+  width: 976px;
+  padding: 0 10px;
   margin: 0 auto; }
 
 .clearfix:before, .clearfix:after {
@@ -61,7 +62,7 @@ body {
 
 /* Header */
 .header {
-  min-width: 956px;
+  min-width: 976px;
   background: #efefef;
   padding: 35px 0; }
 
@@ -73,9 +74,19 @@ body {
 .log-in {
   color: black;
   float: right;
-  background: #9fca38;
+  background: linear-gradient(to top, #9fca38, #aedf39);
+  box-shadow: -1px 1px  #c5c5c5;
   border-radius: 10px;
-  padding: 10px 30px; }
+  border: 0;
+  outline: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 10s; }
+  .log-in:hover {
+    background: #aedf39;
+    background: linear-gradient(to bottom, #9fca38, #aedf39); }
+  .log-in:active {
+    box-shadow: inset 0 0 1px 0 white; }
 
 /* Introduce part of lending */
 .intro {
@@ -106,12 +117,18 @@ body {
       display: inline-block;
       padding: 20px 70px;
       border-radius: 5px;
-      background: #9fca38;
+      background: linear-gradient(to top, #9fca38, #aedf39);
+      box-shadow: -1px 1px  #c5c5c5;
       text-align: center;
       cursor: pointer;
       outline: none;
-      box-shadow: none;
-      border: none; }
+      border: none;
+      transition: all 1s; }
+      .intro .slogan .reg_button:hover {
+        background: #aedf39;
+        background: linear-gradient(to bottom, #9fca38, #aedf39); }
+      .intro .slogan .reg_button:active {
+        box-shadow: inset 0 0 1px 0 white; }
       .intro .slogan .reg_button .regblock {
         display: block; }
       .intro .slogan .reg_button_name {
@@ -134,7 +151,7 @@ body {
 
 /* Advantages part */
 .advant {
-  min-width: 956px;
+  min-width: 976px;
   background: #9fca38;
   padding: 90px 0px; }
 
@@ -160,7 +177,7 @@ body {
 
 /* Footer */
 .footer {
-  min-width: 956px;
+  min-width: 976px;
   background: #9fca38;
   text-align: center; }
   .footer .copy {
@@ -196,9 +213,11 @@ body {
     margin: 10% auto;
     display: none;
     width: 300px; }
+  .filter .shadow {
+    box-shadow: 0 1px 5px black; }
   .filter .title {
     font-size: 17px;
-    background: #403d41;
+    background: linear-gradient(to top, #403d41, #868386);
     width: 100%;
     padding: 8px;
     color: white;
@@ -228,13 +247,20 @@ body {
     font-family: Tahoma, Arial,sans-serif;
     font-size: 22px;
     padding: 18px 0;
-    background: #9fca38;
+    background: linear-gradient(to top, #9fca38, #aedf39);
+    box-shadow: -1px 1px  #c5c5c5;
     border: 0;
     position: relative;
     color: white;
     bottom: -10px;
     border-radius: 5px 5px 0 0;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 1s; }
+    .filter input[type="submit"]:hover {
+      background: #aedf39;
+      background: linear-gradient(to bottom, #9fca38, #aedf39); }
+    .filter input[type="submit"]:active {
+      box-shadow: inset 0 0 1px 0 white; }
   .filter .pass input {
     margin-bottom: 0px; }
   .filter .forgot {

@@ -54,15 +54,16 @@ body {
   display: block; }
 
 .wrap {
-  width: 1020px;
-  margin: 0 auto; }
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 10px; }
 
 /* Header */
 .header {
   background: #efefef;
   text-align: center;
   border-bottom: 5px solid #e0e0e0;
-  min-width: 1020px; }
+  min-width: 1040px; }
   .header .wrap {
     padding: 2px 20px; }
   .header .logo {
@@ -164,12 +165,26 @@ body {
   width: 10px;
   border-radius: 5px; }
 
+.add_button {
+  font-size: 12px;
+  border: 1px solid #c5c5c5;
+  background: #efefef;
+  padding: 0px 10px 6px 10px;
+  border-radius: 3px;
+  text-align: center;
+  outline: none;
+  float: right; }
+  .add_button .plus {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/plus.png) 0 0 no-repeat;
+    position: relative;
+    top: 4px;
+    margin-right: 5px; }
+
 .sidebar {
-  display: block;
-  /*   float:left;
-    height:830px;
-    width:330px;
-    overflow-y:scroll; */ }
+  display: block; }
   .sidebar_top {
     width: 330px;
     margin: 20px 0 10px 10px; }
@@ -179,21 +194,6 @@ body {
       display: inline-block;
       width: 130px;
       line-height: 2.1em; }
-    .sidebar_top_button {
-      font-size: 12px;
-      border: 1px solid #c5c5c5;
-      background: #efefef;
-      padding: 0px 15px 5px 10px;
-      border-radius: 3px;
-      text-align: center;
-      float: right; }
-      .sidebar_top_button .icon-plus-circled {
-        color: #9fca38;
-        display: inline-block;
-        font-size: 24px;
-        line-height: 1.2em;
-        position: relative;
-        top: 0.11em; }
   .sidebar_item {
     border-bottom: 1px solid #c5c5c5;
     vertical-align: center;
@@ -251,15 +251,14 @@ body {
           color: #9fca38;
           padding: 0 5px; }
 
-.cost-icon span {
+.cost-icons .cost-icon {
   color: #999999;
   font-weight: bold;
-  margin-right: 24px; }
+  margin-left: 24px; }
+  .cost-icons .cost-icon:first-child {
+    margin-left: 0; }
 
-.cost-icon span:nth-child(3) {
-  margin: 0; }
-
-.cost-icon i {
+.cost-icons i {
   position: relative;
   top: 5px;
   display: inline-block;
@@ -267,13 +266,13 @@ body {
   height: 20px;
   margin-right: 5px; }
 
-.cost-icon span:nth-child(1) i {
+.cost-icons .icon-bed1 i {
   background: url(../img/settings-icon.png) no-repeat -38px 0; }
 
-.cost-icon span:nth-child(2) i {
+.cost-icons .icon-ship1 i {
   background: url(../img/settings-icon.png) no-repeat -56px 0; }
 
-.cost-icon span:nth-child(3) i {
+.cost-icons .icon-car1 i {
   width: 18px;
   background: url(../img/settings-icon.png) no-repeat -75px 0; }
 
@@ -298,17 +297,16 @@ body {
   .detail label {
     display: inline-block;
     width: 80px;
-    margin: 0 0 -1px 0;
+    margin-left: -5px;
+    margin-bottom: -1px;
     padding: 10px 15px;
     font-size: 12px;
     text-align: center;
     border: 1px solid #c5c5c5;
     background: #efefef;
     border-radius: 3px 3px 0 0; }
-  .detail label:nth-of-type(2) {
-    margin-left: -5px; }
-  .detail label:nth-of-type(3) {
-    margin-left: -5px; }
+  .detail .first {
+    margin-left: 0px; }
   .detail input:checked + label {
     border: 1px solid #9fca38;
     border-bottom: 1px solid white;
@@ -322,12 +320,15 @@ body {
 .expenses, .overview, .contact {
   height: 675px; }
 
+.expenses .wrap_table {
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  margin-bottom: 10px; }
+
 .expenses table {
   font-size: 13px;
   width: 100%;
-  text-align: left;
-  border: 1px solid #c5c5c5;
-  border-radius: 5px; }
+  text-align: left; }
   .expenses table td {
     padding: 5px 0; }
   .expenses table td:first-child {
@@ -376,6 +377,18 @@ body {
 
 .expenses table tr:hover td {
   background: #efefef; }
+
+.expenses_total {
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 10px 15px 12px;
+  background: #f6f9e5; }
+  .expenses_total_name {
+    float: right;
+    font-weight: bold;
+    font-size: 13; }
+  .expenses_total_amount {
+    font-size: 24px; }
 
 .filter {
   position: fixed;
@@ -494,6 +507,28 @@ body {
         top: 0;
         opacity: 0; }
 
+/* Style for chosen plugin select */
+.chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {
+  background: transparent;
+  font-size: 13px;
+  border: 2px solid #efefef;
+  border-radius: 2px;
+  box-shadow: 0 0 0px 1px #c5c5c5, inset 0 0 0px 1px #c5c5c5; }
+
+.chosen-container-single .chosen-single div, .chosen-container-active.chosen-with-drop .chosen-single div {
+  width: 28px;
+  background: #efefef; }
+
+.chosen-container-single .chosen-single div b {
+  background: url("../img/chosen-sprite.png") no-repeat 9px 2px; }
+
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: -9px 2px; }
+
+.chosen-container .chosen-drop {
+  border: 2px solid #efefef;
+  border-radius: 2px; }
+
 /* Overview */
 .title2 {
   font-size: 13px;
@@ -522,16 +557,16 @@ body {
     padding: 10px 0; }
   .overview table tr td {
     width: 120px; }
-  .overview table tr td:nth-child(2), .overview table tr td:nth-child(4) {
+  .overview table tr td.bol {
     font-weight: bold; }
-  .overview table tr td:nth-child(2) {
+  .overview table tr .auto {
     width: auto; }
 
 .overview .growth table tr td {
   font-weight: normal;
   text-align: center; }
 
-.overview .growth table tr:nth-child(2) td {
+.overview .growth table .tr_bol td {
   font-weight: bold; }
 
 .overview .growth .radius {
@@ -553,19 +588,19 @@ body {
   background: #f6f9e5;
   border-radius: 3px;
   padding: 10px 15px 12px; }
-  .total > span {
+  .total .total_name, .total .total_name1 {
     font-size: 13px;
     font-weight: bold; }
-  .total > span span {
+  .total .total_number, .total .total_number1, .total .total_number_black {
     position: relative;
     top: 2px;
     color: #9fca38;
     font-size: 24px;
     margin-left: 10px; }
-  .total > span:last-child {
+  .total .total_name {
     float: right; }
-    .total > span:last-child span {
-      color: black; }
+  .total .total_number_black {
+    color: black; }
 
 /* contact */
 .contact .contacts {
@@ -634,7 +669,7 @@ body {
 
 .footer {
   background: #333;
-  min-width: 1020px;
+  min-width: 1040px;
   padding: 50px 0;
   margin-top: 30px;
   color: #999;

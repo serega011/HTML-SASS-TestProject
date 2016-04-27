@@ -54,6 +54,19 @@ $(document).ready(function(){
     $( ".file_upload input" ).triggerHandler( "change" );
     });
 
+    /* Settings for chosen plugin*/
+
+    $('#upply').chosen({
+        width:"100%",
+        disable_search_threshold: 10
+    });
+    $('#frequency').chosen({
+        width:"206px",
+        disable_search_threshold: 10
+    });
+    
+
+
 
 });
 

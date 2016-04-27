@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="font/fontello/css/fontello.css">
     <link rel="stylesheet" href="css/baron.css">
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="libs/chosen_v1.5.1/chosen.css">
     <link rel="stylesheet" href="css/property.css">
-    
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     
     <script src = "libs/jquery/dist/jquery.min.js"></script>
     <script src = "js/bootstrap-datepicker.js"></script>
     <script src = "libs/bootstrap/dist/js/bootstrap.js"></script>
     <script src = "js/baron.js"></script>
-    <script src = "libs/chosen_v1.5.1/chosen.jquery.js"></script>
     <script src = "js/property.js"></script>
 </head>
 <body>
@@ -43,7 +40,7 @@
         <div class="wrap">
             <div class="sidebar_top clearfix">
                 <span class="sidebar_top_name">Property</span>
-                <button class="add_button"><i class="plus"></i>Add property</button>
+                <button class="sidebar_top_button"><i class="icon-plus-circled"></i>Add property</button>
             </div>
 
         </div>
@@ -147,7 +144,7 @@
                     <div class="baron__track">
                         <div class="baron__bar">
                     </div>
-                    </div>
+                </div>
                 </div>
                 
                 <div class="info">
@@ -161,74 +158,64 @@
                             <p class = "description_cost_full">
                                 <span>Rent<span>$270.00</span>Per week</span>
                             </p>
-                            <div class="cost-icons">
-                                <span class = "icon-bed1 cost-icon"><i></i>3</span>
-                                <span class = "icon-ship1 cost-icon"><i></i>1</span>
-                                <span class = "icon-car1 cost-icon"><i></i>2</span>
+                            <div class="cost-icon">
+                                <span><i></i>3</span>
+                                <span><i></i>1</span>
+                                <span><i></i>2</span>
                             </div>
                         </div>
                     </div>
                         <div class="detail">
                             <input id="expenses" type="radio" name="tabs" checked>
-                            <label class = "first" for="expenses" title="Вкладка 1">Expenses</label>
+                            <label for="expenses" title="Вкладка 1">Expenses</label>
                             <input id="overview" type="radio" name="tabs">
                             <label for="overview" title="Вкладка 2">Overview</label>
                             <input id="contact" type="radio" name="tabs">
                             <label for="contact" title="Вкладка 3">Contact</label>
                             
                                 <div class="expenses">
-                                 <div class="wrap_table">
                                     <table>
-                                                <tr class = "topic odd">
-                                                    <th>Date</th>
-                                                    <th>Company</th>
-                                                    <th>Description</th>
-                                                    <th>Amount</th>
-                                                    <th>Paid</th>
-                                                    <th>File</th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr> 
-                                                <tr class = "odd">
-                                                    <td>01/06/2012</td>
-                                                    <td>Sydney Walter</td>
-                                                    <td>Utility</td>
-                                                    <td>$210.50</td>
-                                                    <td class = "confirm"><i></i></td>
-                                                    <td class = "file"><i></i></td>
-                                                    <td><i class="edit"></i></td>
-                                                    <td><i class="uninstall"></i></td>
-                                                </tr>
-                                                <tr class = "even">
-                                                    <td>01/06/2012</td>
-                                                    <td>Gawker Council</td>
-                                                    <td>Rates</td>
-                                                    <td>$210.50</td>
-                                                    <td class = "confirm"><i></i></td>
-                                                    <td class = "file"><i></i></td>
-                                                    <td><i class="edit"></i></td>
-                                                    <td><i class="uninstall"></i></td>
-                                                </tr>
-                                                <tr class = "odd">
-                                                    <td>01/06/2012</td>
-                                                    <td>Joe Plumbing</td>
-                                                    <td>Repairs</td>
-                                                    <td>$210.50</td>
-                                                    <td class = "confirm"><i></i></td>
-                                                    <td class = "file"><i></i></td>
-                                                    <td><i class="edit"></i></td>
-                                                    <td><i class="uninstall"></i></td>
-                                                </tr>
+                                            <tr class = "topic odd">
+                                                <th>Date</th>
+                                                <th>Company</th>
+                                                <th>Description</th>
+                                                <th>Amount</th>
+                                                <th>Paid</th>
+                                                <th>File</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr> 
+                                            <tr class = "odd">
+                                                <td>01/06/2012</td>
+                                                <td>Sydney Walter</td>
+                                                <td>Utility</td>
+                                                <td>$210.50</td>
+                                                <td class = "confirm"><i></i></td>
+                                                <td class = "file"><i></i></td>
+                                                <td><i class="edit"></i></td>
+                                                <td><i class="uninstall"></i></td>
+                                            </tr>
+                                            <tr class = "even">
+                                                <td>01/06/2012</td>
+                                                <td>Gawker Council</td>
+                                                <td>Rates</td>
+                                                <td>$210.50</td>
+                                                <td class = "confirm"><i></i></td>
+                                                <td class = "file"><i></i></td>
+                                                <td><i class="edit"></i></td>
+                                                <td><i class="uninstall"></i></td>
+                                            </tr>
+                                            <tr class = "odd">
+                                                <td>01/06/2012</td>
+                                                <td>Joe Plumbing</td>
+                                                <td>Repairs</td>
+                                                <td>$210.50</td>
+                                                <td class = "confirm"><i></i></td>
+                                                <td class = "file"><i></i></td>
+                                                <td><i class="edit"></i></td>
+                                                <td><i class="uninstall"></i></td>
+                                            </tr>
                                     </table>
-                                    </div>
-                                    <div class = "clearfix">
-                                        <button class="add_button"><i class="plus"></i>Add new</button>
-                                    </div>
-                                    <div class="expenses_total clearfix">
-                                        <span class="expenses_total_name">Total YTD
-                                            <span class="expenses_total_amount">$152,42.00</span>
-                                        </span>
-                                    </div>
                                 </div>
                                 <div class="overview">
                                     <div class="lease">
@@ -236,26 +223,26 @@
                                         <table>
                                             <tr>
                                                 <td>Lease period</td>
-                                                <td class = "bol auto">12 months</td>
+                                                <td>12 months</td>
                                                 <td>Amount</td>
-                                                <td class = "bol">$20.00</td>
+                                                <td>$20.00</td>
                                             </tr>
                                             <tr>
                                                 <td>Lease exipry</td>
-                                                <td class = "bol auto">12/03/2013</td>
+                                                <td>12/03/2013</td>
                                                 <td>Amount</td>
-                                                <td class = "bol">$20.00</td>
+                                                <td>$20.00</td>
                                             </tr>
                                             <tr>
                                                 <td>Lease increase</td>
-                                                <td class = "bol auto">12/03/2012</td>
+                                                <td>12/03/2012</td>
                                                 <td>Amount</td>
-                                                <td class = "bol">$20.00</td>
+                                                <td>$20.00</td>
                                                 </tr>
                                         </table>
                                         <div class="total clearfix">
-                                            <span class = "total_name1">Annual income<span class="total_number">$14.040</span></span>
-                                            <span class = "total_name">Rental Yield<span class="total_number_black">7.6%</span></span>
+                                            <span>Annual income<span>$14.040</span></span>
+                                            <span>Rental Yield<span class="number">7.6%</span></span>
                                         </div>
                                     </div>
                                     <div class="annual">
@@ -263,19 +250,19 @@
                                         <table>
                                             <tr>
                                                 <td>Strata fees</td>
-                                                <td class = "bol auto">$670.00</td>
+                                                <td>$670.00</td>
                                                 <td>Fee per year</td>
-                                                <td class = "bol">$1.870</td>
+                                                <td>$1.870</td>
                                             </tr>
                                             <tr>
                                                 <td>Council rates</td>
-                                                <td class = "bol auto">$450</td>
+                                                <td>$450</td>
                                                 <td></td>
-                                                <td class = "bol"></td>
+                                                <td></td>
                                             </tr>
                                         </table>
                                         <div class="total clearfix">
-                                            <span class = "total_name">Cash Flow<span class="total_number">-$450.00</span></span>
+                                            <span>Cash Flow<span class="number">-$450.00</span></span>
                                         </div>
                                     </div>
                                     <div class="growth">
@@ -288,7 +275,7 @@
                                                     <td>Loan Amount</td>
                                                     <td>Equity</td>
                                                 </tr>
-                                                <tr class = "tr_bol">
+                                                <tr>
                                                     <td>$215.000</td>
                                                     <td>$245.000</td>
                                                     <td>$220.00</td>
@@ -298,7 +285,7 @@
                                         </div>
                                         <span>Last valuations<span>12/03/12</span></span>
                                         <div class="total clearfix">
-                                            <span class = "total_name">Capitol Growth<span class="total_number">13%</span></span>
+                                            <span>Capitol Growth<span class="number">13%</span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -338,13 +325,6 @@
                             <div class = "select edit_row">
                                 <select name="upply" id="upply">
                                     <option disabled>Apply to a current item</option>
-                                    <option value="1">Item n</option>
-                                    <option value="1">Item n</option>
-                                    <option value="1">Item n</option>
-                                    <option value="1">Item n</option>
-                                    <option value="1">Item n</option>
-                                    <option value="1">Item n</option>
-                                    <option value="1">Item n</option>
                                 </select>
                             </div>
                             <div class = "company edit_row">
@@ -425,4 +405,3 @@
         </div>
 </body>
 </html>
-
