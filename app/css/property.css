@@ -58,6 +58,9 @@ body {
   margin: 0 auto;
   padding: 0 10px; }
 
+.hidden_mod {
+  overflow: hidden; }
+
 /* Header */
 .header {
   background: #efefef;
@@ -169,7 +172,7 @@ body {
   font-size: 12px;
   border: 1px solid #c5c5c5;
   background: #efefef;
-  padding: 0px 10px 6px 10px;
+  padding: 0px 10px 7px 10px;
   border-radius: 3px;
   text-align: center;
   outline: none;
@@ -180,7 +183,7 @@ body {
     height: 20px;
     background: url(../img/plus.png) 0 0 no-repeat;
     position: relative;
-    top: 4px;
+    top: 5px;
     margin-right: 5px; }
 
 .sidebar {
@@ -398,7 +401,8 @@ body {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 100; }
+  z-index: 100;
+  overflow: auto; }
   .filter .editing {
     height: 670px;
     width: 425px;
@@ -607,7 +611,8 @@ body {
   padding: 0 35px;
   background: #efefef;
   width: 49%;
-  float: left; }
+  float: left;
+  border-radius: 3px; }
   .contact .contacts_bl {
     display: block; }
   .contact .contacts:nth-child(odd) {

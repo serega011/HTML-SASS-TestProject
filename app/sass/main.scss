@@ -65,7 +65,9 @@ $rear: #efefef;
 	clear: both;
 	display: block;
 }
-
+.hidden_mod{
+	overflow:hidden;
+}
 
 /* Header */
 .header{
@@ -243,6 +245,7 @@ $rear: #efefef;
 	top:0;
 	left:0;
 	background:rgba(0,0,0,0.4);
+	overflow:auto;
 	&_window{
 		margin:10% auto;
 		display:none;

@@ -64,6 +64,9 @@ $contur: #c5c5c5;
     margin:0 auto;
     padding:0 10px;
 }
+.hidden_mod{
+    overflow:hidden;
+}
 
 /* Header */
 
@@ -200,7 +203,7 @@ $contur: #c5c5c5;
             font-size:12px;
             border:1px solid $contur;
             background:$rear;
-            padding:0px 10px 6px 10px;
+            padding:0px 10px 7px 10px;
             border-radius:3px;
             text-align:center;
             outline:none;
@@ -211,7 +214,7 @@ $contur: #c5c5c5;
                 height:20px;
                 background:url(../img/plus.png) 0 0 no-repeat;
                 position:relative;
-                top:4px;
+                top:5px;
                 margin-right:5px;
             }
         }
@@ -466,7 +469,7 @@ $contur: #c5c5c5;
     width:100%;
     background:rgba(0,0,0,0.4);
     z-index: 100;
-
+    overflow:auto;
     .editing{
         height:670px;
         width:425px;
@@ -744,6 +747,7 @@ $contur: #c5c5c5;
         background:$rear;
         width:49%;
         float:left;
+        border-radius:3px;
         &_bl{
             display:block;
         }

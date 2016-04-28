@@ -60,6 +60,9 @@ body {
   clear: both;
   display: block; }
 
+.hidden_mod {
+  overflow: hidden; }
+
 /* Header */
 .header {
   min-width: 976px;
@@ -208,7 +211,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.4);
+  overflow: auto; }
   .filter_window {
     margin: 10% auto;
     display: none;

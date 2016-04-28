@@ -10,12 +10,14 @@ $(document).ready(function(){
 
     $('.expenses .edit').click(function(){
     filter.fadeIn(600);
+    $('body').toggleClass('hidden_mod');
     })
 
     filter.click(function(e){
         var target = $(e.target);
         if (target.hasClass('filter')){
             filter.fadeOut(600);
+            $('body').toggleClass('hidden_mod');
         };
     });
 
@@ -75,10 +77,7 @@ window.onload = function() {
     baron({
         root: '.baron',
         scroller: '.baron__scroller',
-        bar: '.baron__bar',
-        scrollingCls: '_scrolling',
-        impact: 'clipper',
-        draggingCls: '_dragging'
+        bar: '.baron__bar'
     });
     $('#datetimepicker1').datepicker({
         autoclose: true
