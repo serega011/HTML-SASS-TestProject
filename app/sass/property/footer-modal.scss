@@ -1,0 +1,194 @@
+.filter{
+    position:fixed;
+    display:none;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,0.4);
+    z-index: 100;
+    overflow:auto;
+    .editing{
+        height:670px;
+        width:425px;
+        margin:10% auto;
+        background:white;
+        border:1px solid $color;
+        padding-top:45px;
+
+        &_name{
+            margin-bottom:30px;
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        label, .paid_name,.start_name,.upload_name{
+        width:120px;
+        display:inline-block;
+        }
+
+        .select{
+            padding-left:125px;
+        }
+
+        .edit_row{
+            padding-bottom:20px;
+        }
+        
+        input,select{
+            width:206px;
+            font-size:13px;
+            padding:4px 2px;
+            border:2px solid $rear;
+            border-radius:2px;
+            box-shadow:0 0 0px 1px $contur,inset 0 0 0px 1px $contur;
+        }
+
+        .amount, .company{
+            padding-bottom:5px;
+        }
+
+        .amount input,.paydate input{
+            width:110px;
+        }
+        .input-group-addon,#paydate,#amount,.date,#end{
+            display:inline-block;
+        }
+        .input-group-addon{
+            color:$color;
+            background:none;
+            border:none;
+            font-size: 24px;
+            cursor:pointer;
+            padding: 0 3px;
+        }
+
+        .paid{
+            input{
+                display:none;
+            }
+
+            label{
+                width:50px;
+                background:$rear;
+                text-align:center;
+                padding:6px;
+                text-transform: capitalize;
+                font-size:12px;
+                border:1px solid $contur;
+            }
+            .paid_yes{
+                margin-right:-5px;
+                border-radius:5px 0 0 5px;
+            }
+            .paid_no{border-radius:0 5px 5px 0;}
+
+            &_check{
+                background:$contur !important;
+            }
+        }
+        .upload{
+            padding-bottom:none;
+            input{
+                border:none;
+                box-shadow:none;
+            }
+            &_name{
+                vertical-align: top;
+            }
+        }
+
+        &_1block,&_2block{padding: 20px 45px;}
+
+        &_2block{
+            border-top:1px solid $contur;
+            .edit_row{padding-bottom:5px;}
+            input,select{
+                width:110px;
+            }
+        }
+        &_buttons{
+            text-align:center;
+            padding-top:40px;
+            input,button{
+                box-shadow:none;
+                border:1px solid $contur;
+                outline:none;
+                width:80px;
+                padding:5px 0;
+                border-radius:5px;
+                background:$rear;
+                font-size:12px;
+                &:hover{
+                    background:$color;
+                    cursor:pointer;
+                }
+            }
+        }
+        .file_upload{
+            display:inline-block;
+            position:relative;
+            width:206px;
+            vertical-align:top;
+            &_button,&_mark{
+                display:block;
+                cursor:pointer;
+            }
+            &_button{
+                margin-top:10px;
+                width:80px;
+                background:$rear;
+                height: 100%;
+                text-align: center;
+                border-radius:5px;
+                border:1px solid $contur;
+                padding:5px; 
+                font-size:12px;
+            }
+            input[type = "file"]{
+                position: absolute;
+                top: 0;
+                opacity: 0
+            }
+        }
+    }
+}
+/* Style for chosen plugin select */
+
+.chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single{
+    height:26px;
+    background:transparent;
+    font-size: 13px;
+    border: 2px solid #efefef;
+    border-radius: 2px;
+    box-shadow: 0 0 0px 1px #c5c5c5, inset 0 0 0px 1px #c5c5c5;
+}
+.chosen-container-single .chosen-single div,.chosen-container-active.chosen-with-drop .chosen-single div{
+    width:28px;
+    background:$rear;
+}
+.chosen-container-single .chosen-single div b{
+        background: url('../img/chosen-sprite.png') no-repeat 9px 2px;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -9px 2px;
+}
+.chosen-container .chosen-drop{
+    border: 2px solid #efefef;
+    border-radius: 2px;
+}
+
+
+
+.footer{
+    background:#333;
+    min-width:1040px;
+    padding:50px 0;
+    margin-top:30px;
+    color:#999;
+    font-size:13px;
+    text-align:center;
+    .copyright{
+        padding:10px;
+    }
+}

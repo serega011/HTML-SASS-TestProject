@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline; }
+
+html {
+    line-height: 1; }
+
+ol, ul {
+    list-style: none; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle; }
+
+q, blockquote {
+    quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+    border: none; }
+
+a, a:active, a:hover, a:visited, a:link {
+    text-decoration: none;
+    color:black;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block; }
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    height: 100%;
+    width: 100%; }
+
+.clearfix:before,.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.wrap{
+    width:1040px;
+    margin:0 auto;
+    padding:0 10px;
+}
+.hidden_mod{
+    overflow:hidden;
+}
+
+/* Header */
+
+.header{
+    background:$rear;
+    text-align:center;
+    border-bottom:5px solid #e0e0e0;
+    min-width:1040px;
+    .wrap{
+        padding:2px 20px;
+    }
+    .logo{
+        float:left;
+        font-size:30px;
+        color:$color;
+        line-height:50px;
+        font-weight:bold;
+    }
+    .icons{
+        display:block;
+        width:282px;
+        margin:0 auto;
+        i{
+            display:block;
+            margin:0 auto;
+            width:21px;
+            height:22px;
+            margin-bottom:5px;
+        }
+        &_all{
+            display:block;
+            cursor:pointer;
+            text-align:center;
+            float:left;
+            padding:5px 18px;
+            border:1px solid $rear;
+            &:hover{
+                background:#dfe0e2;
+                border-radius:5px;
+                border:1px solid #e0e0e0;
+            }
+        }
+        .icon_1 i{
+                background:url(../img/threeicon.png) no-repeat 1px;
+            }
+        .icon_2 i{
+                background:url(../img/threeicon.png) no-repeat -20px;
+            }
+        .icon_3 i{
+                background:url(../img/threeicon.png) no-repeat -43px;
+            }
+            
+    }
+    .setting{
+        float:right;
+        position:relative;
+        padding:5px 5px;
+        top:10px;
+        width:150px;
+        cursor:pointer;
+        outline: none;
+        border:none;
+        border-radius:5px 5px 0 0;
+        background:$rear;
+        &_icon{
+            display:inline-block;
+            margin:0 auto;
+            width:18px;
+            height:18px;
+            background:url(../img/settings-icon.png) no-repeat;
+            margin-left:10px;
+            position:relative;
+            top:3px;
+            
+        }
+        &_menu{
+            display:none;
+            position:absolute;
+            top:100%;
+            left:0;
+            font-size:13px;
+            border:1px solid $contur;
+            border-top:0;
+            width:150px;
+            li{
+                padding:10px 10px;
+                text-align:left;
+                background:#F5F5F5;
+                border-bottom:1px solid white;
+                &:last-child{
+                    border-bottom:1px solid $rear;
+                }
+                &:hover{
+                    border-bottom:1px solid $color;
+                }       
+            }
+            a{
+                color:$color;
+            }
+        }
+    }
+    .active{
+        background:$contur;
+        border-radius:3px 3px 0 0;
+        box-shadow:inset 1px 1px 0px #7D7D7D;
+    }
+}
+
+

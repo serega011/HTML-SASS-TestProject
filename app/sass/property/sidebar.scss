@@ -1,0 +1,107 @@
+
+/* General part of page */
+
+.property{
+    margin:0 20px 0 10px;
+}
+.info{
+    float:left;
+    margin-left:10px;
+    width:650px;
+    height:830px;
+    border:1px solid $contur;
+}
+
+/* Sidebar */
+.sidebar{
+    display:block;
+    &_top{
+        width:330px;
+        margin:20px 0 10px 10px;
+        &_name{
+            color:$color;
+            font-weight: bold;
+            display:inline-block;
+            width:130px;
+            line-height:2.1em;
+        }
+    }
+
+    &_item{
+        border-bottom:1px solid $contur;
+        vertical-align: center;
+        padding:10px 0;
+        margin-right:15px;
+        &:first-child{
+            border-top:1px solid $contur;
+        }
+    }
+
+    &_img{
+        float:left;
+        width:130px;
+        margin-right:10px;
+        img{
+            display:block;
+            width:100%;
+            height:auto;
+            border-radius:5px;
+        }
+    }
+
+    &_info{
+        max-width:140px;
+        float:left;
+        padding-top:10px;
+        &_name{
+            font-size:15px;
+            color:$color;
+            font-weight:bold;
+        }
+        &_adress{
+            margin-top:5px;
+            font-size:13px;
+            color:#999;
+        }
+    }
+}
+/* Style for baron */
+.baron{
+    float:left;
+    height:830px;
+    width:330px !important;
+    min-width: 330px !important;
+    max-width: 330px !important;
+    position:relative;
+    overflow:hidden;
+}
+.baron__bar{
+    border-radius:5px;
+    right:-1px;
+    background: #9fca38;
+}
+.baron__track{
+    border:1px solid $contur;
+    width:10px;
+    border-radius:5px;
+}
+.add_button{
+    font-size:12px;
+    border:1px solid $contur;
+    background:$rear;
+    padding:0px 10px 7px 10px;
+    border-radius:3px;
+    text-align:center;
+    outline:none;
+    float:right;
+    .plus{
+        display:inline-block;
+        width:20px;
+        height:20px;
+        background:url(../img/plus.png) 0 0 no-repeat;
+        position:relative;
+        top:5px;
+        margin-right:5px;
+    }
+}
+

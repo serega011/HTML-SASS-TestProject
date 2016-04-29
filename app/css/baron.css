@@ -1,13 +1,4 @@
-.baron{
-    float:left;
-    height:830px;
-    width:330px !important;
-    min-width: 330px !important;
-    max-width: 330px !important;
-    position:relative;
-    overflow:hidden;
-}
-.baron__clipper {
+.baron__clipper{
     position: relative;
     overflow: hidden;
 }
@@ -50,8 +41,7 @@
     right: 0;    
     z-index: 1;
     width: 10px;
-    height:20px;
-    background: #9fca38;
+    background: #999;
 }
 .baron._scrollbar .baron__bar {
     display: block;

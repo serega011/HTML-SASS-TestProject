@@ -1,0 +1,353 @@
+.description{
+    padding:25px 25px 20px 30px;
+    background:$rear;
+    border-bottom:2px solid $contur;
+    &_full{display:inline-block;} 
+    &_name{
+        font-size:18;
+        font-weight:bold;
+        margin-bottom:20px;
+    }
+    &_adress{
+        font-size:15px;
+        color:#999;
+    }
+    &_cost{
+        float:right;
+        margin-right:40px;
+        &_full{
+            margin-bottom:20px;
+            span{
+                font-size:13px;
+                font-weight:bold;
+                span{
+                    font-size:18px;
+                    font-weight:bold;
+                    color:$color;
+                    padding:0 5px;
+                }
+            }
+        }
+    }
+}
+.cost-icons{
+    .cost-icon{
+        color:#999999;
+        font-weight: bold;
+        margin-left:24px;
+        &:first-child{
+            margin-left:0;
+        }
+    }
+    i{
+        position:relative;
+        top:5px;
+        display:inline-block;
+        width:20px;
+        height:20px;
+        margin-right:5px
+    }
+    .icon-bed1 i{
+        background:url(../img/settings-icon.png) no-repeat -38px 0;
+    }
+    .icon-ship1 i{
+        background:url(../img/settings-icon.png) no-repeat -56px 0;
+    }
+    .icon-car1 i{
+        width:18px;
+        background:url(../img/settings-icon.png) no-repeat -75px 0;
+    }
+}
+.edit{
+    display:inline-block;
+    float:right;
+    background:red;
+    width:19px;
+    height:20px;
+    background:url(../img/settings-icon.png) no-repeat -18px 0;
+    cursor:pointer;
+}
+
+/* Description part    */ 
+
+.detail {
+    margin:10px;
+    >div{
+        padding:25px 20px;
+        border: 1px solid $color;
+        display:none;
+    }
+    input{
+        display:none;
+    }
+    label{
+    display:inline-block;
+    width:80px;
+    margin-left:-5px;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    font-size:12px;
+    text-align: center;
+    border: 1px solid $contur;
+    background: $rear;
+    border-radius: 3px 3px 0 0;
+    }
+    .first{
+        margin-left:0px;
+    }
+    input:checked + label {
+        border: 1px solid $color;
+        border-bottom: 1px solid white;
+        background: white;
+    }
+    #expenses:checked ~ .expenses,
+    #overview:checked ~ .overview,
+    #contact:checked ~ .contact{
+        display: block;
+    }
+}
+
+/* Expenses */
+
+.expenses,.overview,.contact{height:675px;}
+.expenses{
+    .wrap_table{
+    border:1px solid $contur;
+    border-radius:5px;
+    margin-bottom:10px;
+    }
+    table{
+        font-size: 13px;
+        width:100%;
+        text-align:left;
+        td{
+            padding:5px 0;
+        }
+        td:first-child{
+             padding-left:20px;
+        }
+        }
+    tbody{
+        width:100%;
+    }
+    .topic th{
+        font-weight: bold;
+        padding:10px 0;
+        background:$rear;
+        &:first-child{
+            padding-left:20px;
+        }
+    }
+    .confirm i{
+        cursor:pointer;
+        display:block;
+        width:15px;
+        height:20px;
+        background:url(../img/confirm.png) no-repeat;
+    }
+    .file i {
+        display:block;
+        width:15px;
+        height:20px;
+        background:url(../img/format.png) no-repeat;
+    }
+    td .edit{
+        display:block;
+        opacity: 0;
+    }
+    .uninstall{
+        display:block;
+        opacity: 0;
+        width:16px;
+        height:20px;
+        background:url(../img/settings-icon.png) no-repeat -93px;
+        position:relative;
+        top:-3px;
+        margin-left:10px;
+        cursor:pointer;
+    }
+    table tr:hover .edit,table tr:hover .uninstall,{opacity:1;}
+    table tr:hover td{background:$rear;}
+    &_total{
+        margin-top:10px;
+        border-radius: 3px;
+        padding: 10px 15px 12px;
+        background: #f6f9e5;
+        &_name{
+            float:right;
+            font-weight: bold;
+            font-size:13;
+        }
+        &_amount{
+            font-size:24px;
+        }
+    }
+}
+/* Overview */
+.title2{
+    font-size:13px;
+    font-weight:bold;
+    color:white;
+    background:$color;
+    padding:3px 15px 7px;
+    border-radius:3px;
+    line-height:18px;
+    margin:10px 0 15px;
+
+    i{
+        cursor:pointer;
+        position:relative;
+        margin-left:10px;
+        display:inline-block;
+        width:18px;
+        height:18px;
+        top:4px;
+        background:url(../img/settings-icon.png) no-repeat 0-123px ;
+    }
+}
+.overview{
+
+    table{
+        width:100%;
+        text-align:left;
+        font-size:15px;
+
+        td{
+            padding:10px 0;
+        }
+
+        tr td{
+            width:120px;
+        }
+
+        tr td.bol{
+            font-weight: bold;
+        }
+
+        tr .auto{
+            width:auto;
+        }
+    }
+    .growth{
+        table{
+            tr td{
+                font-weight: normal;
+                text-align:center;
+            }
+            .tr_bol td{
+                font-weight:bold;
+            }
+        }
+        .radius{
+            border:1px solid $contur;
+            border-radius:3px;
+            padding:0 15px;
+            margin-bottom:10px;
+        }
+        >span{
+            display: block;
+            margin-bottom:20px;
+        }
+        >span span{
+            font-size: 15px;
+            font-weight: bold;
+            margin-left:10px;
+        }
+    }
+}
+.total{
+    background:#f6f9e5;
+    border-radius:3px;
+    padding:10px 15px 12px;
+    .total_name,.total_name1{
+        font-size: 13px;
+        font-weight:bold;
+    }
+    .total_number,.total_number1,.total_number_black{
+        position:relative;
+        top:2px;
+        color:$color;
+        font-size: 24px;
+        margin-left:10px;
+    }
+    .total_name{
+        float:right;
+    }
+    .total_number_black{
+        color:black;
+    }
+}
+
+
+/* contact */
+
+.contact{
+    .contacts{
+        padding:0 35px;
+        background:$rear;
+        width:49%;
+        float:left;
+        border-radius:3px;
+        &_bl{
+            display:block;
+        }
+        &:nth-child(odd){
+            margin-right:2%;
+        }
+    }
+    .name1{
+        display:block;
+        font-size: 18px;
+        font-weight:bold;
+        margin-top:40px;
+    }
+    .post{
+        display:block;
+        position:relative;
+        cursor:pointer;
+        padding:5px 0;
+        font-size: 13px;
+        color:#999;
+        &_add{
+            display:none;
+            width:100%;
+            background:white;
+            padding:10px;
+            position:absolute;
+            bottom:22px;
+            left:0;
+            box-shadow: 0px 0px 20px 3px  $contur;
+            &::after{
+                content:"";
+                position:absolute;
+                border:10px solid transparent;
+                border-top:10px solid white;
+                bottom:-16px;
+                left:15px;
+            }
+        }
+        &:hover .post_add{
+            display:block;
+        }
+    }
+    .mail{
+        margin-top:25px;
+        color:$color;
+    }
+    .phone{margin-bottom:30px}
+    .mail,.phone{
+        font-size:15px;
+        font-weight:bold;
+    }
+    .mail i,.phone i{
+        width:18px;
+        height:18px;
+        display:inline-block;
+        font-weight:bold;
+        color:#999;
+        margin-right:5px;
+    }
+    .phone i{
+        background:url(../img/settings-icon.png) no-repeat -108px;
+    }
+}
