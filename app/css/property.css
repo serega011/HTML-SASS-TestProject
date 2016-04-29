@@ -513,6 +513,7 @@ body {
 
 /* Style for chosen plugin select */
 .chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {
+  height: 26px;
   background: transparent;
   font-size: 13px;
   border: 2px solid #efefef;
