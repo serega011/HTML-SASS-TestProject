@@ -16,7 +16,7 @@
 .sidebar{
     display:block;
     &_top{
-        width:330px;
+        float:left;
         margin:20px 0 10px 10px;
         &_name{
             color:$color;
@@ -24,6 +24,7 @@
             display:inline-block;
             width:130px;
             line-height:2.1em;
+            margin-right:68px;
         }
     }
 
@@ -89,7 +90,7 @@
     font-size:12px;
     border:1px solid $contur;
     background:$rear;
-    padding:0px 10px 7px 10px;
+    padding:0px 10px 8px 10px;
     border-radius:3px;
     text-align:center;
     outline:none;

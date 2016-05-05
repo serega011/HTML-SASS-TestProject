@@ -2,7 +2,7 @@
     padding:25px 25px 20px 30px;
     background:$rear;
     border-bottom:2px solid $contur;
-    &_full{display:inline-block;} 
+    &_full{float:left;} 
     &_name{
         font-size:18;
         font-weight:bold;
@@ -13,8 +13,9 @@
         color:#999;
     }
     &_cost{
-        float:right;
+        float:left;
         margin-right:40px;
+        margin-left:150px;
         &_full{
             margin-bottom:20px;
             span{

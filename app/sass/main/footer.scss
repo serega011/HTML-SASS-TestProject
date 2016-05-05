@@ -10,12 +10,12 @@
 	}
 }
 .links{
-	margin:0 auto;
-	width:362px;
+	text-align:center;
+	display:block;
 	padding-bottom:25px;
 	li{
 		font-size:13px;
-		float:left;
+		display:inline-block;
 		border-right: 1px solid black;
 		padding:0 10px;
 		text-decoration: underline;

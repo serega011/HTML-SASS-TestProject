@@ -7,33 +7,37 @@
     <link rel="stylesheet" href="css/baron.css">
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="libs/chosen_v1.5.1/chosen.css">
+    <link rel="stylesheet" href="libs/chosen/chosen.css">
     <link rel="stylesheet" href="css/property.min.css">
 </head>
 <body>
     <div class="header">
         <div class="wrap clearfix">
-            <span class="logo">Logo</span>
+            <div class="logo_wrap">
+                <span class="logo">Logo</span>
+            </div>
+            <div class="setting_but">
+                <button class="setting">
+                    <span class = "setting_name">User Adams</span>
+                    <i class = "setting_icon"></i>
+                </button>
+                <ul class="setting_menu">
+                        <li><a href="#">My profile</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Change password</a></li>
+                        <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
             <div class="icons">
                 <a href="#" class = "icons_all icon_1"><i></i><span>Property</span></a>
                 <a href="#" class = "icons_all icon_2"><i></i><span>Loans</span></a>
                 <a href="#" class = "icons_all icon_3"><i></i><span>Report</span></a>
             </div>
-            <button class="setting">
-                <span class = "setting_name">User Adams</span>
-                <i class = "setting_icon"></i>
-                <ul class="setting_menu">
-                    <li><a href="#">My profile</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Change password</a></li>
-                    <li><a href="#">Log Out</a></li>
-                </ul>
-            </button>
         </div>
         </div>
         <div class="wrap">
             <div class="sidebar_top clearfix">
-                <span class="sidebar_top_name">Property</span>
+                <p class="sidebar_top_name">Property</p>
                 <button class="add_button"><i class="plus"></i>Add property</button>
             </div>
 
@@ -142,12 +146,11 @@
                 </div>
                 
                 <div class="info">
-                    <div class="description ">
+                    <div class="description clearfix">
                         <div class="description_full">
                             <p class = "description_name">Evanston Gardens(House)</p>
                             <p class = "description_adress">13 Hindmarsh st, SA, 5000</p>
                         </div>
-                        <i class="edit"></i>
                         <div class="description_cost">
                             <p class = "description_cost_full">
                                 <span>Rent<span>$270.00</span>Per week</span>
@@ -158,6 +161,7 @@
                                 <span class = "icon-car1 cost-icon"><i></i>2</span>
                             </div>
                         </div>
+                        <i class="edit"></i>
                     </div>
                         <div class="detail">
                             <input id="expenses" type="radio" name="tabs" checked>
@@ -295,20 +299,20 @@
                                 </div>
                                 <div class="contact">
                                     <div class="contacts">
-                                        <span class="name1 contacts_bl">Michelle Willams</span>
-                                        <span class="post contacts_bl">Owner
-                                            <span class = "post_add">Owner in New Yourk</span>
-                                        </span>
-                                        <span class="mail contacts_bl"><i>@</i>mwilliams@hotmail.com</span>
-                                        <span class="phone contacts_bl"><i></i>02 8654 8770</span>
+                                        <p class="name1 contacts_bl">Michelle Willams</p>
+                                        <p class="post contacts_bl">Owner
+                                            <p class = "post_add">Owner in New Yourk</p>
+                                        </p>
+                                        <p class="mail contacts_bl"><i>@</i>mwilliams@hotmail.com</p>
+                                        <p class="phone contacts_bl"><i></i>02 8654 8770</p>
                                     </div>
                                     <div class="contacts">
-                                        <span class="name1 contacts_bl">Julie Smith</span>
-                                        <span class="post contacts_bl">Agent in Horne Style
-                                            <span class = "post_add">Agent in Horne Style on Baker Street</span>
-                                        </span>
-                                        <span class="mail contacts_bl"><i>@</i>smith@hotmail.com</span>
-                                        <span class="phone contacts_bl"><i></i>02 8654 8770</span>
+                                        <p class="name1 contacts_bl">Julie Smith</p>
+                                        <p class="post contacts_bl">Agent in Horne Style
+                                            <p class = "post_add">Agent in Horne Style on Baker Street</p>
+                                        </p>
+                                        <p class="mail contacts_bl"><i>@</i>smith@hotmail.com</p>
+                                        <p class="phone contacts_bl"><i></i>02 8654 8770</p>
                                     </div>
                                 </div>
                                 
@@ -420,7 +424,7 @@
     <script src = "js/bootstrap-datepicker.js"></script>
     <script src = "libs/bootstrap/dist/js/bootstrap.js"></script>
     <script src = "js/baron.js"></script>
-    <script src = "libs/chosen_v1.5.1/chosen.jquery.js"></script>
+    <script src = "libs/chosen/chosen.jquery.js"></script>
     <script src = "js/property.js"></script>
 </body>
 </html>
