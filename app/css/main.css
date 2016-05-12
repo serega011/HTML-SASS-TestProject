@@ -90,7 +90,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Introduce part of lending */
 .intro {
-  background: #efefef; }
+  background: #efefef;
+  width: 976px;
+  min-width: 976px; }
   .intro_img {
     float: right;
     width: 462px; }
