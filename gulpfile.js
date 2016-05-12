@@ -20,7 +20,6 @@ gulp.task('sass', function () {
 		}))
     .pipe(flatten())
     .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.stream());
 });
 
 gulp.task('min', function() {

@@ -1,6 +1,41 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    height: 100%;
+    width: 100%; 
+}
+
+@mixin clearfix{
+
+    &:before,&:after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+/* General width of container for all content */
+
+.wrap{
+    min-width:976px;
+    width:976px;
+    padding:0 10px;
+    margin:0 auto;
+    @include clearfix;
+}
+
+.hidden_mod{overflow:hidden;}
+
 $color : #9fca38; 
 $rear: #efefef;
 
+@import "../../css/reset";
 @import "header";
-@import "body";
+@import "intro";
+@import "advantage";
 @import "footer";
+@import "modal";
+@import "../../font/fontello/css/fontello"

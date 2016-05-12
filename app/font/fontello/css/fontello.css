@@ -103,9 +103,9 @@
 
 @font-face {
   font-family: 'lock';
-  src: url('../font/lock.eot?41547871');
-  src: url('../font/lock.eot?41547871#iefix') format('embedded-opentype'),
-       url('../font/lock.svg?41547871#lock') format('svg');
+  src: url('../font/fontello/font/lock.eot?41547871');
+  src: url('../font/fontello/font/lock.eot?41547871#iefix') format('embedded-opentype'),
+       url('../font/fontello/font/lock.svg?41547871#lock') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -120,7 +120,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'lock';
-    src: url('../font/lock.svg?41547871#lock') format('svg');
+    src: url('../font/fontello/font/lock.svg?41547871#lock') format('svg');
   }
 }
 */
@@ -216,12 +216,12 @@
 
 @font-face {
   font-family: 'lock';
-  src: url('../font/lock.eot?23396540');
-  src: url('../font/lock.eot?23396540#iefix') format('embedded-opentype'),
-       url('../font/lock.woff2?23396540') format('woff2'),
-       url('../font/lock.woff?23396540') format('woff'),
-       url('../font/lock.ttf?23396540') format('truetype'),
-       url('../font/lock.svg?23396540#lock') format('svg');
+  src: url('../font/fontello/font/lock.eot?23396540');
+  src: url('../font/fontello/font/lock.eot?23396540#iefix') format('embedded-opentype'),
+       url('../font/fontello/font/lock.woff2?23396540') format('woff2'),
+       url('../font/fontello/font/lock.woff?23396540') format('woff'),
+       url('../font/fontello/font/lock.ttf?23396540') format('truetype'),
+       url('../font/fontello/font/lock.svg?23396540#lock') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -231,7 +231,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'lock';
-    src: url('../font/lock.svg?23396540#lock') format('svg');
+    src: url('../font/fontello/font/lock.svg?23396540#lock') format('svg');
   }
 }
 */

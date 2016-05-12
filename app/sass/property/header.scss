@@ -46,45 +46,53 @@ body {
     font-family: Arial, sans-serif;
     font-size: 17px;
     height: 100%;
-    width: 100%; }
+    width: 100%; 
+}
 
 .clearfix:before,.clearfix:after{
     content: "";
     clear: both;
     display: block;
 }
+
 .wrap{
     width:1040px;
     margin:0 auto;
     padding:0 10px;
 }
+
 .hidden_mod{
     overflow:hidden;
 }
 
 /* Header */
-
 .header{
     background:$rear;
     text-align:center;
     border-bottom:5px solid #e0e0e0;
     min-width:1040px;
+
     .wrap{
         padding:2px 20px;
     }
+
     .logo{
         font-size:30px;
         color:$color;
         line-height:1.8em;
         font-weight:bold;
+        
         &_wrap{
             float:left;
         }
+
     }
+
     .icons{
         margin-left:200px;
         margin-right:200px;
         display:block;
+        
         i{
             display:block;
             margin:0 auto;
@@ -92,34 +100,42 @@ body {
             height:22px;
             margin-bottom:5px;
         }
+        
         &_all{
             display:inline-block;
             cursor:pointer;
             text-align:center;
             padding:5px 18px;
             border:1px solid $rear;
+            
             &:hover{
                 background:#dfe0e2;
                 border-radius:5px;
                 border:1px solid #e0e0e0;
             }
+
         }
+
         .icon_1 i{
                 background:url(../img/threeicon.png) no-repeat 1px;
-            }
+        }
+
         .icon_2 i{
                 background:url(../img/threeicon.png) no-repeat -20px;
-            }
+        }
+
         .icon_3 i{
                 background:url(../img/threeicon.png) no-repeat -43px;
-            }
+        }
             
     }
+
     .setting_but{
         float:right;
         position:relative;
         top:12px;
     }
+
     .setting{
         position:relative;
         padding:5px 5px;
@@ -129,6 +145,7 @@ body {
         border:none;
         border-radius:5px 5px 0 0;
         background:$rear;
+        
         &_icon{
             display:inline-block;
             margin:0 auto;
@@ -137,9 +154,9 @@ body {
             background:url(../img/settings-icon.png) no-repeat;
             margin-left:10px;
             position:relative;
-            top:3px;
-            
+            top:3px;   
         }
+
         &_menu{
             display:none;
             position:absolute;
@@ -149,28 +166,36 @@ body {
             border:1px solid $contur;
             border-top:0;
             width:150px;
+            
             li{
                 padding:10px 10px;
                 text-align:left;
                 background:#F5F5F5;
                 border-bottom:1px solid white;
+                
                 &:last-child{
                     border-bottom:1px solid $rear;
                 }
+                
                 &:hover{
                     border-bottom:1px solid $color;
-                }       
+                }
+
             }
+
             a{
                 color:$color;
             }
+
         }
     }
+
     .active{
         background:$contur;
         border-radius:3px 3px 0 0;
         box-shadow:inset 1px 1px 0px #7D7D7D;
     }
+    
 }
 
 

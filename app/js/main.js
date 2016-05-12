@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
-    var filter = $('.filter');
+    var modal = $('.modal');
 
     $('.log-in').click(function(){
-        filter.fadeIn(600);
+        modal.fadeIn(600);
         $('.login').fadeIn(600);
         $('body').toggleClass('hidden_mod');
     });
     $('.reg_button').click(function(){
-        filter.fadeIn(600);
+        modal.fadeIn(600);
         $('.reg').fadeIn(600);
         $('body').toggleClass('hidden_mod');
     });
@@ -21,11 +21,11 @@ $(document).ready(function(){
 
 
 
-    filter.click(function(e){
+    modal.click(function(e){
         var target = $(e.target)
-        if (target.hasClass('filter')){
-            filter.fadeOut(600);
-            $('.filter>div').fadeOut(600);
+        if (target.hasClass('modal')){
+            modal.fadeOut(600);
+            $('.modal>div').fadeOut(600);
             $('body').toggleClass('hidden_mod');
         };
     });
