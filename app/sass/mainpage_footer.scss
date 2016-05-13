@@ -5,14 +5,13 @@
     background:$color;
     text-align:center;
     
-    .copy{
+    &_copy{
         color:white;
         font-size:13px;
         padding-bottom:70px;
     }
-}
-
-.links{
+    
+    &_links{
     text-align:center;
     display:block;
     padding-bottom:25px;
@@ -29,5 +28,8 @@
         }
     }
 }
+}
+
+
 
 

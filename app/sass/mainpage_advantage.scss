@@ -6,25 +6,28 @@
     padding:90px 0px;
 
     &_item{
-        display:inline-block;
+    display:inline-block;
     width:210px;
-    text-align:center;
+    text-align:left;
     margin-left:158px;
     
     &:first-child{margin-left:0}
     
     img{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
         margin-bottom:35px;
     }
     
-    .advantage_item_title,&_text{
-        font-family:Arial,sans-serif;
+    &-title,&-text{
+        font-family:Arial,Helvetica,sans-serif;
         font-size:17px;
         color:white;
         line-height:1.4em;
     }
     
-    .advantage_item_title{
+    &-title{
         display:block;
         text-transform:uppercase;
         font-weight:bold;

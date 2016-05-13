@@ -10,7 +10,7 @@ var gulp         = require('gulp'),
 /* Next tasks for main_page app*/
 
 gulp.task('sass', function () {
-  return gulp.src(['app/sass/*/property.scss','app/sass/*/main.scss'])
+  return gulp.src(['app/sass/property.scss','app/sass/main.scss'])
     .pipe(sass({
       includePaths: require('node-bourbon').includePaths
     }).on('error', sass.logError))
@@ -45,7 +45,7 @@ gulp.task('serve', ['sass'], function() {
         }
     });
 
-    gulp.watch("app/sass/*/*.scss", ['sass']);
+    gulp.watch("app/sass/*.scss", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload),['html'];
     gulp.watch("app/css/*.css",['min']);
 });

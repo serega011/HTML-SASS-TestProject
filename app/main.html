@@ -9,19 +9,21 @@
     <div class="header ">
         <div class="wrap">
             <a href="/" class = "header_logo">Here will be a logo</a class = "header_logo">
-            <button class = "log-in">Log in</button>
+            <button class = "header_button-log">Log in</button>
         </div>
     </div>
     <div class="intro">
         <div class="wrap">
                 <div class = "intro_info">
-                    <h1 class = "intro_info_slogan">maximum returns.Minimum time.</h1>
-                    <p class = "intro_info_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
-                    <button class = "reg_button">
-                    <span class = "reg_button_name regblock">Register now</span>
-                    <span class = "reg_button_info regblock">30 day free trial</span>
-                    </button>
-                    <span class = "reg_button_note regblock">No credit card required</span>
+                    <h1 class = "intro_info-slogan">maximum returns.Minimum time.</h1>
+                    <p class = "intro_info-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+                    <div class = "intro_info-wrap">
+                        <button class = "intro_info-button">
+                        <p class = "intro_info-button-name ">Register now</p>
+                        <p class = "intro_info-button-info ">30 day free trial</p>
+                        </button>
+                        <p class = "intro_info-button-note ">No credit card required</p>
+                    </div>
                 </div>
                 <div class="intro_img">
                     <img src="img/screen1.png" alt="display photo">
@@ -32,88 +34,88 @@
         <div class="wrap">
             <div class="advantage_item">
                 <img src="img/dollar-bag.png" alt="dollar bag">
-                <h2 class = "advantage_item_title">maximise returns</h2>
-                <p class = "advantage_item_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                <h2 class = "advantage_item-title">maximise returns</h2>
+                <p class = "advantage_item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
                 dolore magna aliquam erat </p>
             </div>
             <div class="advantage_item">
                 <img src="img/layers.png" alt="layers">
-                <h2 class = "advantage_item_title">simplify tax time</h2>
-                <p class = "advantage_item_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                <h2 class = "advantage_item-title">simplify tax time</h2>
+                <p class = "advantage_item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
                 dolore magna aliquam erat </p>
             </div>
             <div class="advantage_item">
                 <img src="img/graph.png" alt="graph">
-                <h2 class = "advantage_item_title">get insight</h2>
-                <p class = "advantage_item_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                <h2 class = "advantage_item-title">get insight</h2>
+                <p class = "advantage_item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
                 dolore magna aliquam erat </p>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="wrap">
-            <ul class = "links">
+            <ul class = "footer_links">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Terms&amp;Conditions</a></li>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Twitter</a></li>
             </ul>
-            <p class = "copy">&#169; Copyright</p>
+            <p class = "footer_copy">&#169; Copyright</p>
         </div>
     </div>
     <div class="modal">
         <!-- This element makes the rear darken then we click on log in button and includs log in/registrarion forms  -->
-        <div class="login modal_window">
-            <div class="title">Log in</div>
-            <div class="shadow">
-                <div class="logo">Logo</div>
-                <form action="" >
-                    <div class="login_block">
-                        <input type="text" name = "email" placeholder = "Email Addres">
+        <div class="modal_login modal_window">
+            <div class="modal_ltitle">Log in</div>
+            <div class="modal_shadow">
+                <div class="modal_logo">Logo</div>
+                <form  class = "modal_form" action="" >
+                    <div class="modal_relative-block">
+                        <input class = "modal_text-input" type="text" name = "email" placeholder = "Email Addres">
                         <i class = "icon_email reg_icons">@</i>
                     </div>
-                    <div class="login_block">
-                        <input type="password" name = "password1" placeholder = "Password">
+                    <div class="modal_relative-block">
+                        <input class = "modal_text-input" type="password" name = "password1" placeholder = "Password">
                         <i class = "icon-lock reg_icons"></i>
                     </div>
-                    <a class = "forgot" href="#" id = "forgot">Forgot your password?</a>
+                    <a class = "modal_forgot" href="#" id = "forgot">Forgot your password?</a>
                     <input class = "login_but" type="submit" value = "Log in">
                 </form>
             </div>
         </div>
-        <div class="reg modal_window">
-            <div class="title">Registration</div>
-            <div class="shadow">
-                <div class="logo">Logo</div>
-                <form action="" >
-                    <div class ='reg_name reg_block'>
-                        <input type="text" name = "name" placeholder = "Name">
+        <div class="modal_reg modal_window">
+            <div class="modal_title">Registration</div>
+            <div class="modal_shadow">
+                <div class="modal_logo">Logo</div>
+                <form  class = "modal_form" action="" >
+                    <div class ='modal_reg-name modal_relative-block'>
+                        <input class = "modal_text-input" type="text" name = "name" placeholder = "Name">
                         <i class = "icon-user reg_icons"></i>
                     </div>
-                    <div class ="reg_email reg_block">
-                        <input type="text" name = "email" placeholder = "Email Addres">
+                    <div class ="modal_reg-email modal_relative-block">
+                        <input class = "modal_text-input" type="text" name = "email" placeholder = "Email Addres">
                         <i class = "icon_email reg_icons">@</i>
                     </div>
-                    <div class = "reg_password reg_block">
-                        <input type="password" name = "password1" placeholder = "Password">
+                    <div class = "modal_reg-password modal_relative-block">
+                        <input class = "modal_text-input" type="password" name = "password1" placeholder = "Password">
                         <i class = "icon-lock reg_icons"></i>
                     </div>
-                    <div class = "reg_password_repeat reg_block">
-                        <input type="password" name = "password2" placeholder = "Confirm Password">
+                    <div class = "modal_reg-repeat modal_relative-block">
+                        <input class = "modal_text-input" type="password" name = "password2" placeholder = "Confirm Password">
                         <i class = "icon-lock-filled reg_icons"></i>
                     </div>
                     <input class = 'reg_but' type="submit" value = "Register now!">
                 </form>
             </div>
         </div>
-        <div class="pass modal_window">
-            <div class="title">Change password</div>
-            <div class="shadow">
-                <div class="logo">Logo</div>
-                <form action="" >
-                    <div class="pass_block">
-                        <input type="text" name = "email" placeholder = "Email Addres">
+        <div class="modal_pass modal_window">
+            <div class="modal_title">Change password</div>
+            <div class="modal_shadow">
+                <div class="modal_logo">Logo</div>
+                <form  class = "modal_form" action="" >
+                    <div class="modal_relative-block">
+                        <input class = "modal_text-input" type="text" name = "email" placeholder = "Email Addres">
                         <input type="submit" class = "pass_but" value = "Send new password">
                         <i class = "icon_email reg_icons">@</i>
                     </div>

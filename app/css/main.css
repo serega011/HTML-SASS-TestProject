@@ -1,27 +1,4 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box; }
-
-body {
-  font-family: Arial, Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  height: 100%;
-  width: 100%; }
-
-/* General width of container for all content */
-.wrap {
-  min-width: 976px;
-  width: 976px;
-  padding: 0 10px;
-  margin: 0 auto; }
-  .wrap:before, .wrap:after {
-    content: "";
-    clear: both;
-    display: block; }
-
-.hidden_mod {
-  overflow: hidden; }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -61,6 +38,28 @@ a, a:active, a:hover, a:visited, a:link {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+* {
+  box-sizing: border-box; }
+
+/* Color of theme(Current - green) */
+/* Color for background */
+/* Color for border */
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  height: 100%;
+  width: 100%; }
+
+.wrap {
+  min-width: 976px;
+  width: 976px;
+  padding: 0 10px;
+  margin: 0 auto; }
+  .wrap:before, .wrap:after {
+    content: "";
+    clear: both;
+    display: block; }
+
 /* Header */
 .header {
   min-width: 976px;
@@ -70,23 +69,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #9fca38;
     font-size: 30px;
     font-weight: bold; }
-
-.log-in {
-  color: black;
-  float: right;
-  background: linear-gradient(to top, #9fca38, #aedf39);
-  box-shadow: -1px 1px  #c5c5c5;
-  border-radius: 10px;
-  border: 0;
-  outline: none;
-  padding: 10px 30px;
-  cursor: pointer;
-  transition: all 10s; }
-  .log-in:hover {
-    background: #aedf39;
-    background: linear-gradient(to bottom, #9fca38, #aedf39); }
-  .log-in:active {
-    box-shadow: inset 0 0 1px 0 white; }
+  .header_button-log {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    float: right;
+    background: linear-gradient(to top, #9fca38, #aedf39);
+    box-shadow: -1px 1px  #c5c5c5;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 10s; }
+    .header_button-log:hover {
+      background: #aedf39;
+      background: linear-gradient(to bottom, #9fca38, #aedf39); }
+    .header_button-log:active {
+      box-shadow: inset 0 0 1px 0 white; }
 
 /* Introduce part of lending */
 .intro {
@@ -102,19 +102,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     width: 470px;
     padding-top: 90px; }
-    .intro_info_slogan {
-      font-family: Arial, sans-serif;
+    .intro_info-slogan {
+      font-family: Arial,Helvetica, sans-serif;
       font-size: 28px;
       font-weight: bold;
       text-transform: capitalize;
       padding-left: 15px;
       color: #333333; }
-    .intro_info_text {
+    .intro_info-text {
       line-height: 1.4em;
       padding: 20px 15px;
       padding-right: 70px;
-      color: #9f9f9f; }
-    .intro_info .reg_button {
+      color: #666; }
+    .intro_info-wrap {
+      display: inline-block; }
+    .intro_info-button {
       display: inline-block;
       padding: 20px 70px;
       border-radius: 5px;
@@ -125,29 +127,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       outline: none;
       border: none;
       transition: all 1s; }
-      .intro_info .reg_button:hover {
+      .intro_info-button:hover {
         background: #aedf39;
         background: linear-gradient(to bottom, #9fca38, #aedf39); }
-      .intro_info .reg_button:active {
+      .intro_info-button:active {
         box-shadow: inset 0 0 1px 0 white; }
-      .intro_info .reg_button .regblock {
-        display: block; }
-      .intro_info .reg_button_name {
+      .intro_info-button-name {
         font-size: 30px;
         color: white;
         font-weight: bold;
         padding-bottom: 5px; }
-      .intro_info .reg_button_info {
+      .intro_info-button-info {
         font-size: 15px;
         color: black;
         font-weight: bold; }
-      .intro_info .reg_button_note {
+      .intro_info-button-note {
         font-size: 12px;
         font-style: italic;
         display: block;
         color: #9f9f9f;
         padding: 10px 0;
-        width: 332px;
         text-align: center; }
 
 /* Advantages part */
@@ -158,18 +157,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .advantage_item {
     display: inline-block;
     width: 210px;
-    text-align: center;
+    text-align: left;
     margin-left: 158px; }
     .advantage_item:first-child {
       margin-left: 0; }
     .advantage_item img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 35px; }
-    .advantage_item .advantage_item_title, .advantage_item_text {
-      font-family: Arial,sans-serif;
+    .advantage_item-title, .advantage_item-text {
+      font-family: Arial,Helvetica,sans-serif;
       font-size: 17px;
       color: white;
       line-height: 1.4em; }
-    .advantage_item .advantage_item_title {
+    .advantage_item-title {
       display: block;
       text-transform: uppercase;
       font-weight: bold;
@@ -180,25 +182,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   min-width: 976px;
   background: #9fca38;
   text-align: center; }
-  .footer .copy {
+  .footer_copy {
     color: white;
     font-size: 13px;
     padding-bottom: 70px; }
-
-.links {
-  text-align: center;
-  display: block;
-  padding-bottom: 25px; }
-  .links li {
-    font-size: 13px;
-    display: inline-block;
-    border-right: 1px solid black;
-    padding: 0 10px; }
-    .links li a {
-      color: black;
-      text-decoration: underline; }
+  .footer_links {
+    text-align: center;
+    display: block;
+    padding-bottom: 25px; }
+    .footer_links li {
+      font-size: 13px;
+      display: inline-block;
+      border-right: 1px solid black;
+      padding: 0 10px; }
+      .footer_links li a {
+        color: black;
+        text-decoration: underline; }
 
 /* Log in, registration and change password form */
+.hidden_mod {
+  overflow: hidden; }
+
+/* This style hide or show modal window  */
 .modal {
   display: none;
   position: fixed;
@@ -214,27 +219,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 10% auto;
     display: none;
     width: 300px; }
-  .modal .shadow {
+  .modal_shadow {
     box-shadow: 0 1px 5px black; }
-  .modal .title {
+  .modal_title {
     font-size: 17px;
     background: linear-gradient(to top, #403d41, #868386);
     width: 100%;
     padding: 8px;
     color: white;
     border-radius: 10px 10px 0 0; }
-  .modal .logo {
+  .modal_logo {
     color: #9fca38;
     font-size: 30px;
     font-weight: bold;
     padding: 30px 0;
     border-bottom: 1px solid white;
     background: #efefef; }
-  .modal form {
+  .modal_form {
     padding: 0 20px;
     padding-top: 6px;
     background: #efefef; }
-  .modal input[type="text"], .modal input[type="password"] {
+  .modal_text-input {
     display: block;
     font-family: "Trebuchet MS",Helvetica, sans-serif;
     padding: 10px 10px;
@@ -263,15 +268,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       background: linear-gradient(to bottom, #9fca38, #aedf39); }
     .modal input[type="submit"]:active {
       box-shadow: inset 0 0 1px 0 white; }
-  .modal .pass input {
+  .modal_pass input {
     margin-bottom: 0px; }
-  .modal .forgot {
+  .modal_forgot {
     display: block;
     text-align: left;
     font-size: 13px;
     text-decoration: underline;
     color: #7f7d81; }
-  .modal .login_block, .modal .reg_block, .modal .pass_block {
+  .modal_relative-block {
     position: relative; }
   .modal .reg_icons {
     position: absolute;

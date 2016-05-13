@@ -1,0 +1,17 @@
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    height: 100%;
+    width: 100%; 
+}
+
+.wrap{
+    min-width:976px;
+    width:976px;
+    padding:0 10px;
+    margin:0 auto;
+    @include clearfix;
+}
+
+

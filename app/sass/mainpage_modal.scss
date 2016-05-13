@@ -1,5 +1,7 @@
 /* Log in, registration and change password form */
 
+.hidden_mod{overflow:hidden;}/* This style hide or show modal window  */
+
 .modal{
     display:none;
     position:fixed;
@@ -18,9 +20,9 @@
         width:300px;
     }
     
-    .shadow{box-shadow: 0 1px 5px black;}
+    &_shadow{box-shadow: 0 1px 5px black;}
     
-    .title{
+    &_title{
         font-size:17px;
         background: linear-gradient(to top,#403d41,#868386);
         width:100%;
@@ -29,7 +31,7 @@
         border-radius:10px 10px 0 0;
     }
     
-    .logo{
+    &_logo{
         color:$color;
         font-size:30px;
         font-weight:bold;
@@ -38,13 +40,13 @@
         background:#efefef;
     }
     
-    form{
+    &_form{
         padding:0 20px;
         padding-top:6px;
         background:#efefef;
     }
     
-    input[type = "text"],input[type = "password"]{
+    &_text-input{
         display:block;
         font-family: "Trebuchet MS",Helvetica, sans-serif;
         padding:10px 10px;
@@ -81,11 +83,11 @@
         }
     }
     
-    .pass input{
+    &_pass input{
         margin-bottom:0px;
     }
     
-    .forgot{
+    &_forgot{
         display:block;
         text-align:left;
         font-size:13px;
@@ -93,19 +95,16 @@
         color:#7f7d81;
     }
     
-    .login_block,.reg_block,.pass_block{
+    &_relative-block{
         position:relative;
     }
-    
-    .reg{
-        
-        &_icons{
-            position:absolute;
-            top:10px;
-            right:5px;
-            color:#7f7d81;
-            font-weight: bold;
-        }
+
+    .reg_icons{
+        position:absolute;
+        top:10px;
+        right:5px;
+        color:#7f7d81;
+        font-weight: bold;
     }
 
     .icon_email{
