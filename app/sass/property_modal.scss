@@ -1,4 +1,4 @@
-.filter{
+.modal{
     position:fixed;
     display:none;
     top:0;
@@ -8,33 +8,14 @@
     background:rgba(0,0,0,0.4);
     z-index: 100;
     overflow:auto;
-    .editing{
-        height:670px;
+
+    &_editing{
         width:425px;
         margin:10% auto;
         background:white;
         border:1px solid $color;
         padding-top:45px;
 
-        &_name{
-            margin-bottom:30px;
-            font-weight:bold;
-            font-size:18px;
-        }
-
-        label, .paid_name,.start_name,.upload_name{
-        width:120px;
-        display:inline-block;
-        }
-
-        .select{
-            padding-left:125px;
-        }
-
-        .edit_row{
-            padding-bottom:20px;
-        }
-        
         input,select{
             width:206px;
             font-size:13px;
@@ -44,16 +25,40 @@
             box-shadow:0 0 0px 1px $contur,inset 0 0 0px 1px $contur;
         }
 
-        .amount, .company{
-            padding-bottom:5px;
+        &_thirst,&_second{padding: 20px 45px;}
+
+        &_second{
+            border-top:1px solid $contur;
+
+            .edit_row{padding-bottom:5px;}
+
+            input,select{width:110px;}
         }
 
-        .amount input,.paydate input{
-            width:110px;
+        &-name{
+            margin-bottom:30px;
+            font-weight:bold;
+            font-size:18px;
+            margin-left: -10px;
         }
-        .input-group-addon,#paydate,#amount,.date,#end{
+
+        label, .paid_name,.start_name,.upload_name{
+            font-weight:bold;
+            width:120px;
             display:inline-block;
         }
+
+        &-select{padding-left:125px;}
+
+        .edit_row{padding-bottom:20px;}
+
+        &-amount, &-company{padding-bottom:5px;}
+
+        &-amount input,&-paydate input{width:110px;}
+        
+        .input-group-addon,#paydate,#amount,.date,#end{display:inline-block;}
+/* Style for the datepicker */
+
         .input-group-addon{
             color:$color;
             background:none;
@@ -62,8 +67,10 @@
             cursor:pointer;
             padding: 0 3px;
         }
+/* Style for the datepicker */
 
-        .paid{
+        &-paid{
+
             input{
                 display:none;
             }
@@ -77,17 +84,18 @@
                 font-size:12px;
                 border:1px solid $contur;
             }
+
             .paid_yes{
                 margin-right:-5px;
                 border-radius:5px 0 0 5px;
             }
+
             .paid_no{border-radius:0 5px 5px 0;}
 
-            &_check{
-                background:$contur !important;
-            }
+            &_check{background:#9C9C9C !important;}
+            
         }
-        .upload{
+        &-upload{
             padding-bottom:none;
             input{
                 border:none;
@@ -98,53 +106,52 @@
             }
         }
 
-        &_1block,&_2block{padding: 20px 45px;}
-
-        &_2block{
-            border-top:1px solid $contur;
-            .edit_row{padding-bottom:5px;}
-            input,select{
-                width:110px;
-            }
-        }
-        &_buttons{
+       
+        &-buttons{
             text-align:center;
-            padding-top:40px;
+            padding: 20px 0;
+
             input,button{
                 box-shadow:none;
                 border:1px solid $contur;
                 outline:none;
                 width:80px;
                 padding:5px 0;
-                border-radius:5px;
+                border-radius:3px;
                 background:$rear;
                 font-size:12px;
+
                 &:hover{
                     background:$color;
                     cursor:pointer;
                 }
             }
         }
+
         .file_upload{
             display:inline-block;
             position:relative;
             width:206px;
             vertical-align:top;
+
             &_button,&_mark{
+                font-weight: normal;
                 display:block;
                 cursor:pointer;
             }
+
             &_button{
                 margin-top:10px;
                 width:80px;
                 background:$rear;
                 height: 100%;
                 text-align: center;
-                border-radius:5px;
+                border-radius:3px;
                 border:1px solid $contur;
                 padding:5px; 
                 font-size:12px;
             }
+
             input[type = "file"]{
                 position: absolute;
                 top: 0;
@@ -153,8 +160,9 @@
         }
     }
 }
-/* Style for chosen plugin select */
 
+
+/* Style for chosen plugin select */
 .chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single{
     height:26px;
     background:transparent;
@@ -179,16 +187,3 @@
 }
 
 
-
-.footer{
-    background:#333;
-    min-width:1040px;
-    padding:50px 0;
-    margin-top:30px;
-    color:#999;
-    font-size:13px;
-    text-align:center;
-    .copyright{
-        padding:10px;
-    }
-}

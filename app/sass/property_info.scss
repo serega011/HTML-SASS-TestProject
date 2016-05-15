@@ -1,0 +1,87 @@
+.info{
+    float:left;
+    margin-left:10px;
+    width:650px;
+    height:830px;
+    border:1px solid $contur;
+
+    &_description{
+        padding:25px 25px 20px 30px;
+        background:$rear;
+        border-bottom:2px solid $contur;
+
+        &-wrap{float:left;} 
+
+        &-name{
+            font-size:18;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+
+        &-adress{
+            font-size:15px;
+            color:#999;
+        }
+
+        &-cost{
+            float:left;
+            margin-right:40px;
+            margin-left:150px;
+
+            &_full{
+                margin-bottom:20px;
+
+                span{
+                    font-size:13px;
+                    font-weight:bold;
+
+                    span{
+                        font-size:18px;
+                        font-weight:bold;
+                        color:$color;
+                        padding:0 5px;
+                    }
+                }
+            }
+        }
+    }
+    &_cost-icons{
+
+        .cost-icon{
+            color:#999999;
+            font-weight: bold;
+            margin-left:24px;
+
+            &:first-child{margin-left:0;}
+
+        }
+
+        i{
+            position:relative;
+            top:5px;
+            display:inline-block;
+            width:20px;
+            height:20px;
+            margin-right:5px
+        }
+
+        .icon-bed1 i{background:url(../img/settings-icon.png) no-repeat -38px 0;}
+
+        .icon-ship1 i{background:url(../img/settings-icon.png) no-repeat -56px 0;}
+        
+        .icon-car1 i{
+            width:18px;
+            background:url(../img/settings-icon.png) no-repeat -75px 0;
+        }
+    }
+}
+
+.edit{
+    display:inline-block;
+    float:right;
+    background:red;
+    width:19px;
+    height:20px;
+    background:url(../img/settings-icon.png) no-repeat -18px 0;
+    cursor:pointer;
+}

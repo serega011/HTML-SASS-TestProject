@@ -1,0 +1,75 @@
+/* Expenses */
+
+.expenses{
+    &_wrap-table{
+    border:1px solid $contur;
+    border-radius:5px;
+    margin-bottom:10px;
+    }
+    &_table{
+        font-size: 13px;
+        width:100%;
+        text-align:left;
+
+        td{padding:5px 0;}
+
+        td:first-child{padding-left:20px;}
+
+        tbody{width:100%;}
+
+        &-topic th{
+            font-weight: bold;
+            padding:10px 0;
+            background:$rear;
+
+            &:first-child{padding-left:20px;}
+        }
+        &-confirm i{
+        cursor:pointer;
+        display:block;
+        width:15px;
+        height:20px;
+        background:url(../img/confirm.png) no-repeat;
+        }
+        &-file i {
+            display:block;
+            width:15px;
+            height:20px;
+            background:url(../img/format.png) no-repeat;
+        }
+        &-edit{
+            display:block;
+            opacity: 0;
+        }
+        &-uninstall{
+            display:block;
+            opacity: 0;
+            width:16px;
+            height:20px;
+            background:url(../img/settings-icon.png) no-repeat -93px;
+            position:relative;
+            top:-3px;
+            margin-left:10px;
+            cursor:pointer;
+        }
+
+        tr:hover &-edit,tr:hover &-uninstall{opacity:1;}
+
+        tr:hover td{background:$rear;}
+    }
+    &_total{
+        margin-top:10px;
+        border-radius: 3px;
+        padding: 10px 15px 12px;
+        background: #f6f9e5;
+        
+        &-name{
+            float:right;
+            font-weight: bold;
+            font-size:13;
+        }
+        &-amount{
+            font-size:24px;
+        }
+    }
+}

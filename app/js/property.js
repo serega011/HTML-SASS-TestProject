@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-    $('.setting').click(function(){
+    $('.header_setting-but').click(function(){
         
-        $('.setting_menu').slideToggle(200);
-        $('.setting').toggleClass('active');
+        $('.header_setting-menu').slideToggle(200);
+        $('.header_setting-but').toggleClass('active');
     })
 
-    var filter = $('.filter')
+    var filter = $('.modal')
 
     $('.expenses .edit').click(function(){
     filter.fadeIn(600);
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     filter.click(function(e){
         var target = $(e.target);
-        if (target.hasClass('filter')){
+        if (target.hasClass('modal')){
             filter.fadeOut(600);
             $('body').toggleClass('hidden_mod');
         };
@@ -63,7 +63,7 @@ $(document).ready(function(){
         disable_search_threshold: 10
     });
     $('#frequency').chosen({
-        width:"206px",
+        width:"110px",
         disable_search_threshold: 10
     });
     

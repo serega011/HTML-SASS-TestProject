@@ -1,10 +1,15 @@
-$color : #9fca38; /* Color of theme */
-$rear: #efefef;
-$contur: #c5c5c5;
-
-
+@import "../css/reset";
+@import "variables";
+@import "mixin";
 @import "property_header";
+@import "property_add-button";
 @import "property_sidebar";
+@import "property_info";
 @import "property_tabs";
-@import "property_footer-modal";
+@import "property_expenses";
+@import "property_overview";
+@import "property_contact";
+@import "property_modal";
+@import "property_footer";
 @import "../font/fontello/css/fontello"
+
