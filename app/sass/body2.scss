@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size:  17px;
+    height:  100%;
+    width:  100%; 
+}
+
+.wrap {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @include clearfix;
+}
+.hidden_mod {
+    overflow: hidden;
+}

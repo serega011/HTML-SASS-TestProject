@@ -1,0 +1,20 @@
+.add-button {
+    font-size: 12px;
+    border: 1px solid $contur;
+    background: $rear;
+    padding: 0px 10px 8px 10px;
+    border-radius: 3px;
+    text-align: center;
+    outline: none;
+    float: right;
+    
+    &_plus {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../img/plus.png) 0 0 no-repeat;
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+    }
+}

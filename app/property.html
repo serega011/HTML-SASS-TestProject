@@ -37,7 +37,7 @@
         <div class="wrap">
             <div class="sidebar_top">
                 <p class="sidebar_top-name">Property</p>
-                <button class="add_button"><i class="plus"></i>Add property</button>
+                <button class="add-button"><i class="add-button_plus"></i>Add property</button>
             </div>
 
         </div>
@@ -55,7 +55,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -64,7 +64,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -73,7 +73,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -82,7 +82,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -91,7 +91,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -100,7 +100,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -109,7 +109,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -118,7 +118,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -127,7 +127,7 @@
                                     <p class="sidebar_info-adress">13 Hindmarsh st</p>
                                 </div>
                             </div>
-                            <div class="sidebar_item clearfix">
+                            <div class="sidebar_item ">
                                 <div class="sidebar_img">
                                     <img src="img/house.jpg" alt="house">
                                 </div>
@@ -151,9 +151,9 @@
                             <p class = "info_description-adress">13 Hindmarsh st, SA, 5000</p>
                         </div>
                         <div class="info_description-cost">
-                            <p class = "info_description-cost_full">
-                                <span>Rent<span>$270.00</span>Per week</span>
-                            </p>
+                            <div class = "info_description-rent">
+                                <p class ="info_description-rentname" >Rent<span class = "info_description-rentcost">$270.00</span>Per week</p>
+                            </div>
                             <div class="info_cost-icons">
                                 <span class = "icon-bed1 cost-icon"><i></i>3</span>
                                 <span class = "icon-ship1 cost-icon"><i></i>1</span>
@@ -165,11 +165,11 @@
 
                         <div class="detail">
                             <input id="expenses" type="radio" name="tabs" checked>
-                            <label class = "detail_first" for="expenses" title="Вкладка 1">Expenses</label>
+                            <label class = "mod-expenses" for="expenses" title="Вкладка 1">Expenses</label>
                             <input id="overview" type="radio" name="tabs">
-                            <label for="overview" title="Вкладка 2">Overview</label>
+                            <label class = "mod-overview" for="overview" title="Вкладка 2">Overview</label>
                             <input id="contact" type="radio" name="tabs">
-                            <label for="contact" title="Вкладка 3">Contact</label>
+                            <label class = "mod-contact" for="contact" title="Вкладка 3">Contact</label>
                             
                                 <div class="expenses">
                                  <div class="expenses_wrap-table">
@@ -217,12 +217,12 @@
                                     </table>
                                     </div>
                                     <div class = "clearfix">
-                                        <button class="add_button"><i class="plus"></i>Add new</button>
+                                        <button class="add-button"><i class="add-button_plus"></i>Add new</button>
                                     </div>
-                                    <div class="expenses_total clearfix">
-                                        <span class="expenses_total-name">Total YTD
+                                    <div class="expenses_total ">
+                                        <p class="expenses_total-name">Total YTD
                                             <span class="expenses_total-amount">$152,42.00</span>
-                                        </span>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="overview">
@@ -231,26 +231,26 @@
                                         <table class = "overview_table">
                                             <tr>
                                                 <td>Lease period</td>
-                                                <td class = "bol auto">12 months</td>
+                                                <td class = "mod-bold mod-auto">12 months</td>
                                                 <td>Amount</td>
-                                                <td class = "bol">$20.00</td>
+                                                <td class = "mod-bold">$20.00</td>
                                             </tr>
                                             <tr>
                                                 <td>Lease exipry</td>
-                                                <td class = "bol auto">12/03/2013</td>
-                                                <td>Amount</td>
-                                                <td class = "bol">$20.00</td>
+                                                <td class = "mod-bold mod-auto">12/03/2013</td>
+                                                <td></td>
+                                                <td class = "mod-bold">$20.00</td>
                                             </tr>
                                             <tr>
                                                 <td>Lease increase</td>
-                                                <td class = "bol auto">12/03/2012</td>
-                                                <td>Amount</td>
-                                                <td class = "bol">$20.00</td>
+                                                <td class = "mod-bold mod-auto">12/03/2012</td>
+                                                <td></td>
+                                                <td class = "mod-bold">$20.00</td>
                                                 </tr>
                                         </table>
-                                        <div class="total clearfix">
-                                            <span class = "overview_total-altname">Annual income<span class="overview_total-number">$14.040</span></span>
-                                            <span class = "overview_total-name">Rental Yield<span class="overview_total-number_black">7.6%</span></span>
+                                        <div class="overview_total ">
+                                            <p class = "overview_total-altname">Annual income<span class="overview_total-number">$14.040</span></p>
+                                            <p class = "overview_total-name">Rental Yield<span class="overview_total-number mod-number-black">7.6%</span></p>
                                         </div>
                                     </div>
                                     <div class="overview_annual">
@@ -258,19 +258,19 @@
                                         <table class = "overview_table">
                                             <tr>
                                                 <td>Strata fees</td>
-                                                <td class = "bol auto">$670.00</td>
+                                                <td class = "mod-bold mod-auto">$670.00</td>
                                                 <td>Fee per year</td>
-                                                <td class = "bol">$1.870</td>
+                                                <td class = "mod-bold">$1.870</td>
                                             </tr>
                                             <tr>
                                                 <td>Council rates</td>
-                                                <td class = "bol auto">$450</td>
+                                                <td class = "mod-bold mod-auto">$450.00</td>
                                                 <td></td>
-                                                <td class = "bol"></td>
+                                                <td class = "mod-bold"></td>
                                             </tr>
                                         </table>
-                                        <div class="total clearfix">
-                                            <span class = "overview_total-name">Cash Flow<span class="overview_total-number_black">-$450.00</span></span>
+                                        <div class="overview_total ">
+                                            <p class = "overview_total-name">Cash Flow<span class="overview_total-number mod-number-black">-$450.00</span></p>
                                         </div>
                                     </div>
                                     <div class="overview_growth">
@@ -283,7 +283,7 @@
                                                     <td>Loan Amount</td>
                                                     <td>Equity</td>
                                                 </tr>
-                                                <tr class = "tr_bol">
+                                                <tr class = "tr-bold">
                                                     <td>$215.000</td>
                                                     <td>$245.000</td>
                                                     <td>$220.00</td>
@@ -291,17 +291,17 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                        <span>Last valuations<span>12/03/12</span></span>
+                                        <p class ="overview_valuation">Last valuations<span class = "overview_valuation-date">12/03/12</span></p>
                                         <div class="overview_total">
-                                            <span class = "overview_total-name">Capitol Growth<span class="overview_total-number_black">13%</span></span>
+                                            <p class = "overview_total-name">Capitol Growth<span class="overview_total-number mod-number-black">13%</span></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="contacts">
                                     <div class="contacts_contact">
-                                        <p class="contacts_contact-name contacts_bl">Michelle Willams</p>
+                                        <p class="contacts_contact-name ">Michelle Willams</p>
                                         <div class="contacts_contact-post ">Owner
-                                            <p class = "post_add">Owner in New Yourk</p>
+                                            <p class = "contacts_contact-popup">Owner in New Yourk</p>
                                         </div>
                                         <p class="contacts_contact-mail"><i>@</i>mwilliams@hotmail.com</p>
                                         <p class="contacts_contact-phone"><i></i>02 8654 8770</p>
@@ -309,7 +309,7 @@
                                     <div class="contacts_contact">
                                         <p class="contacts_contact-name">Julie Smith</p>
                                         <div class="contacts_contact-post">Agent in Horne Style
-                                            <p class = "post_add">Agent in Horne Style on Baker Street</p>
+                                            <p class = "contacts_contact-popup">Agent in Horne Style on Baker Street</p>
                                         </div>
                                         <p class="contacts_contact-mail"><i>@</i>smith@hotmail.com</p>
                                         <p class="contacts_contact-phone"><i></i>02 8654 8770</p>
@@ -320,19 +320,19 @@
             </div>
 
             <div class="modal">
-                <div class="modal_editing">  
+                <div class="editing">  
                     <form action=""> 
-                        <div class="modal_editing_thirst">
+                        <div class="editing_thirst">
                             
-                            <p class = "modal_editing-name">Edit Recurrent Payment</p>
-                            <div class = "modal_editing-amount edit_row">
+                            <p class = "editing_name ">Edit Recurrent Payment</p>
+                            <div class = "editing_amount mod_row ">
                                 <label for="amount">Amount</label>
-                                <input  id = "amount" type="text" >
+                                <input class = "mod-min-width"  id = "amount" type="text" >
                                 <span>$</span>
                             </div>
-                            <div class = "modal_editing-select edit_row">
-                                <select name="upply" id="upply">
-                                    <option disabled>Apply to a current item</option>
+                            <div class = "editing_select mod_row">
+                                <select class = "mod-max-width" name="upply" id="upply">
+                                    <option disabled selected>Apply to a current item</option>
                                     <option value="1">Item n</option>
                                     <option value="1">Item n</option>
                                     <option value="1">Item n</option>
@@ -342,67 +342,67 @@
                                     <option value="1">Item n</option>
                                 </select>
                             </div>
-                            <div class = "modal_editing-company edit_row">
+                            <div class = "editing_company mod_row">
                                 <label for="company">Company </label>
-                                <input id ="company" type="text">
+                                <input class = "mod-max-width" id ="company" type="text">
                             </div>
-                            <div class = "modal_editing-category edit_row">
+                            <div class = "editing_category mod_row">
                                 <label for="category">Category</label>
-                                <input id ="category" type="text">
+                                <input class = "mod-max-width" id ="category" type="text">
                             </div>
-                            <div class = "modal_editing-paydate edit_row " >
+                            <div class = "editing_paydate mod_row " >
                                 <label for="paydate">Payment Date</label>
                                 <div class="date" id='datetimepicker1'>
-                                    <input id ="paydate" type="text" >
+                                    <input class = "mod-min-width" id ="paydate" type="text" >
                                     <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
                                 </div>
                             </div>
                             
-                            <div class = "modal_editing-paid edit_row">
-                                <span class="paid_name">Paid</span>
-                                <label for="paid_yes" class = "paid_yes">yes<input id ="paid_yes" type="radio" name = "yes-no"></label>
-                                <label for="paid_no" class = "paid_no">no<input id="paid_no" type="radio" name = "yes-no"></label> 
+                            <div class = "editing_paid mod_row">
+                                <span class="editing_paid-name">Paid</span>
+                                <label for="paid_yes" class = "editing_paid-yes">yes<input id ="paid_yes" type="radio" name = "yes"></label>
+                                <label for="paid_no" class = "editing_paid-no">no<input id="paid_no" type="radio" name = "no"></label> 
                             </div>
 
-                            <div class = "modal_editing-upload edit_row">
-                                <span class="upload_name">Upload file</span>
-                                <label class = 'file_upload'>
-                                    <span class = "file_upload_mark">файл не выбран</span>
-                                    <span class="file_upload_button">Select...</span>
+                            <div class = "editing_upload mod_row">
+                                <span class="editing_upload-name">Upload file</span>
+                                <label class = 'editing_file-upload'>
+                                    <span class = "editing_file-mark">файл не выбран</span>
+                                    <span class="editing_file-button">Select...</span>
                                     <input id ="upload" type="file">  
                                 </label>
                                 
                             </div>
                         </div>
                         
-                        <div class="modal_editing_second">
-                            <div class="modal_editing-start edit_row">
-                                <span class="start_name">Start Date</span>
-                                <span class="start_date">05/12/12</span>
+                        <div class="editing_second">
+                            <div class="editing_start mod_row">
+                                <span class="editing_start-name">Start Date</span>
+                                <span class="editing_start-date">05/12/12</span>
                             </div>
-                            <div class="modal_editing-end edit_row">
+                            <div class="editing_end mod_row">
                                 <label for="end">End Date</label>
                                 <div class="date" id='datetimepicker2'>
-                                    <input id = "end" type="text">
+                                    <input class = "mod-min-width" id = "end" type="text">
                                     <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
                                 </div>
                             </div>
-                            <div class="modal_editing-frequency edit_row">
+                            <div class="editing_frequency mod_row">
                                 <label for="frequency">Frequency</label>
-                                <select name="freq" id="frequency">
+                                <select class = "mod-min-width" name="freq" id="frequency">
                                     <option disabled selected>months</option>
                                     <option value="september">september</option>
                                     <option value="october">october</option>
                                     <option value="november">november</option>
                                     <option value="december">december</option>
-                                    <option value="junia">january</option>
+                                    <option value="juniar">january</option>
                                 </select>
                             </div>
-                            <div class="modal_editing-buttons">
+                            <div class="editing_buttons">
                                 <input type="submit" class = "save" value = "Save">
                                 <button>Cancel</button>
                             </div>
@@ -412,8 +412,8 @@
             </div>   
         </div>
         <div class="footer">
-            <div class="wrap">
-                <p class="copyright">&#169; Copyright</p>
+            <div class="wrap footer_wrap">
+                <p class="footer_copyright">&#169; Copyright</p>
                 <div class="footer_info">Some information in footer?</div>
             </div>
         </div>

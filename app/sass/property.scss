@@ -1,15 +1,17 @@
 @import "../css/reset";
 @import "variables";
 @import "mixin";
-@import "property_header";
-@import "property_add-button";
-@import "property_sidebar";
-@import "property_info";
-@import "property_tabs";
-@import "property_expenses";
-@import "property_overview";
-@import "property_contact";
-@import "property_modal";
-@import "property_footer";
+@import "body2";
+@import "header2";
+@import "add-button";
+@import "sidebar";
+@import "info";
+@import "detail";
+@import "expenses";
+@import "overview";
+@import "contact";
+@import "modal2";
+@import "editing";
+@import "footer2";
 @import "../font/fontello/css/fontello"
 

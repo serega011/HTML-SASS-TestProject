@@ -1,10 +1,11 @@
 /* contact */
 
 .contacts{
+    @include clearfix;
 
     &_contact{
         padding:0 35px;
-        background:$rear;
+        background:#F6F6F6;
         width:49%;
         float:left;
         border-radius:3px;
@@ -19,6 +20,25 @@
             font-weight:bold;
             margin-top:40px;
         }
+        &-popup{
+            display:none;
+            width:100%;
+            background:white;
+            padding:10px;
+            position:absolute;
+            bottom:22px;
+            left:0;
+            box-shadow: 0px 0px 20px 3px  $contur;
+
+            &::after {
+                content:"";
+                position:absolute;
+                border:10px solid transparent;
+                border-top:10px solid white;
+                bottom:-16px;
+                left:15px;
+            }
+        }
 
         &-post{
             display:block;
@@ -28,27 +48,7 @@
             font-size: 13px;
             color:#999;
 
-            .post_add{
-                display:none;
-                width:100%;
-                background:white;
-                padding:10px;
-                position:absolute;
-                bottom:22px;
-                left:0;
-                box-shadow: 0px 0px 20px 3px  $contur;
-
-                &::after{
-                    content:"";
-                    position:absolute;
-                    border:10px solid transparent;
-                    border-top:10px solid white;
-                    bottom:-16px;
-                    left:15px;
-                }
-            }
-
-            &:hover .post_add{display:block;}
+            &:hover .contacts_contact-popup{display:block;}
 
         }
         &-mail{

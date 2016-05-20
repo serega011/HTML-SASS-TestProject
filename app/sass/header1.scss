@@ -1,28 +1,28 @@
 /* Header */
 
 .header{
-    min-width:976px;
+    min-width: 976px;
     background: $rear;
-    padding:35px 0;
+    padding: 35px 0;
 
     &_logo{
-        color:$color;
-        font-size:30px;
-        font-weight:bold;
+        color: $color;
+        font-size: 30px;
+        font-weight: bold;
     } 
     &_button-log{
-        font-size:17px;
-        font-weight:bold;
-        color:white;
-        float:right;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        float: right;
         background: linear-gradient(to top, $color, #aedf39);
         box-shadow: -1px 1px  #c5c5c5;
-        border-radius:5px;
-        border:0;
-        outline:none;
-        padding:10px 30px;
-        cursor:pointer;
-        transition:all 10s;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+        padding: 10px 30px;
+        cursor: pointer;
+        transition: all 10s;
         
         &:hover{
             background: #aedf39;

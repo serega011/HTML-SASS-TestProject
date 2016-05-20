@@ -21,17 +21,17 @@ $(document).ready(function(){
         };
     });
 
-    $('.paid input').click(function(){
-        $('.paid label').removeClass('paid_check')
-        $(this).parent().toggleClass('paid_check')
+    $('.editing_paid input').click(function(){
+        $('.editing_paid label').removeClass('editing_paid-check')
+        $(this).parent().toggleClass('editing_paid-check')
     });
 
 
     /*Bihavior for upload input*/
-     var wrapper = $( ".file_upload" ),
+     var wrapper = $( ".editing_file-upload" ),
         inp = wrapper.find( "input" ),
-        btn = wrapper.find( ".file_upload_button" ),
-        lbl = wrapper.find( ".file_upload_mark" );
+        btn = wrapper.find( ".editing_file-button" ),
+        lbl = wrapper.find( ".editing_file-mark" );
 
     var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
 
@@ -47,13 +47,13 @@ $(document).ready(function(){
 
         if( lbl.is( ":visible" ) ){
             lbl.text( file_name );
-            btn.text( "Выбрать" );
+            btn.text( "Select..." );
         }else
             btn.text( file_name );
     }).change();
 
     $( window ).resize(function(){
-    $( ".file_upload input" ).triggerHandler( "change" );
+    $( ".editing_file-upload" ).triggerHandler( "change" );
     });
 
     /* Settings for chosen plugin*/

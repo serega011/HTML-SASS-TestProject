@@ -1,52 +1,51 @@
 
 /* Overview */
 
-.overview{
+.overview {
 
-    &_table{
+    &_table {
         width:100%;
         text-align:left;
         font-size:15px;
 
-        &-wrap{
+        &-wrap {
             border:1px solid $contur;
             border-radius:3px;
             padding:0 15px;
             margin-bottom:10px;
         }
 
-        td{padding:10px 0;}
+        td {padding:10px 0;}
 
-        tr td{width:120px;}
+        tr td {width:120px;}  
 
-        tr td.bol{font-weight: bold;}
+        tr td.mod-bold {font-weight: bold;}  
 
-        tr .auto{width:auto;}
+        tr .mod-auto {width:auto;}
     }
 
-    &_growth{
+    &_growth {
 
-        table{
-
-            tr td{
+            tr td {
                 font-weight: normal;
                 text-align:center;
             }
 
-            .tr_bol td{font-weight:bold;}
-        }
-        >span{
-            display: block;
-            margin-bottom:20px;
-        }
-        >span span{
+            .tr-bold td {font-weight:bold;}
+    }
+
+    &_valuation {
+        display: block;
+        margin-bottom:20px;
+        
+        &-date{
             font-size: 15px;
             font-weight: bold;
             margin-left:10px;
         }
     }
 
-    &_title{
+    &_title {
         font-size:13px;
         font-weight:bold;
         color:white;
@@ -56,7 +55,7 @@
         line-height:18px;
         margin:10px 0 15px;
 
-        i{
+        i {
             cursor:pointer;
             position:relative;
             margin-left:10px;
@@ -67,17 +66,19 @@
             background:url(../img/settings-icon.png) no-repeat 0-123px ;
         }
     }
-    &_total{
+    &_total {
         background:#f6f9e5;
         border-radius:3px;
         padding:10px 15px 12px;
+        @include clearfix;
 
-        &-name,&-altname{
+        &-name,&-altname {
+            display:inline-block;
             font-size: 13px;
             font-weight:bold;
         }
 
-        &-number,&-number_black{
+        &-number{
             position:relative;
             top:2px;
             color:$color;
@@ -85,9 +86,9 @@
             margin-left:10px;
         }
 
-        &-name{float:right;}
+        &-name {float:right;}
 
-        &-number_black{color:black;}
+        .mod-number-black {color:black;}
     }
 }
 
