@@ -1,77 +1,86 @@
 /* contact */
 
-.contacts{
-    @include clearfix;
+.contacts {
 
-    &_contact{
-        padding:0 35px;
-        background:#F6F6F6;
-        width:49%;
-        float:left;
-        border-radius:3px;
+    &_contact {
+        padding: 0 35px;
+        background: #F6F6F6;
+        width: 48%;
+        display:inline-block;
+        border-radius: 3px;
+        margin:0 3px;
 
-        &_bl{display:block;}
-
-        &:nth-child(odd){margin-right:2%;}
-
-        &-name{
-            display:block;
-            font-size: 18px;
-            font-weight:bold;
-            margin-top:40px;
+        &_bl {
+            display: block;
         }
-        &-popup{
-            display:none;
-            width:100%;
-            background:white;
-            padding:10px;
-            position:absolute;
-            bottom:22px;
-            left:0;
-            box-shadow: 0px 0px 20px 3px  $contur;
+
+        &-name {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        &-popup {
+            display: none;
+            width: 100%;
+            background: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 22px;
+            left: 0;
+            box-shadow: 0px 0px 20px 3px $contur;
 
             &::after {
-                content:"";
-                position:absolute;
-                border:10px solid transparent;
-                border-top:10px solid white;
-                bottom:-16px;
-                left:15px;
+                content: "";
+                position: absolute;
+                border: 10px solid transparent;
+                border-top: 10px solid white;
+                bottom: -16px;
+                left: 15px;
             }
         }
 
-        &-post{
-            display:block;
-            position:relative;
-            cursor:pointer;
-            padding:5px 0;
+        &-post {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            padding: 5px 0;
             font-size: 13px;
-            color:#999;
+            color: #999;
 
-            &:hover .contacts_contact-popup{display:block;}
-
-        }
-        &-mail{
-            margin-top:25px;
-            color:$color;
-        }
-        &-phone{margin-bottom:30px}
-
-        &-mail,&-phone{
-            font-size:15px;
-            font-weight:bold;
+            &:hover .contacts_contact-popup {
+                display: block;
+            }
         }
 
-        &-mail i,&-phone i{
-            width:18px;
-            height:18px;
-            display:inline-block;
-            font-weight:bold;
-            color:#999;
-            margin-right:5px;
+        &-mail {
+            margin-top: 25px;
+            color: $color;
         }
 
-        &-phone i{ background:url(../img/settings-icon.png) no-repeat -108px;}
+        &-phone {
+            margin-bottom: 30px
+        }
 
-    }   
+        &-mail,
+        &-phone {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        &-mail i,
+        &-phone i {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            font-weight: bold;
+            color: #999;
+            margin-right: 5px;
+        }
+        
+        &-phone i {
+            background: url(../img/settings-icon.png) no-repeat -108px;
+        }
+    }
 }

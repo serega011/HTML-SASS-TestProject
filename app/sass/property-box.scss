@@ -1,0 +1,11 @@
+
+/* General part of page */
+
+.property-box {
+    
+    @include clearfix;
+
+    .mod-property-box {
+        padding: 0 20px 0 10px;
+    }
+}

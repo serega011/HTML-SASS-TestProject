@@ -3,6 +3,7 @@
     margin-left: 10px;
     width: 650px;
     border: 1px solid $contur;
+    margin-top: 65px;
 
     &_description {
         padding: 25px 25px 20px 30px;
@@ -82,6 +83,6 @@
     background: red;
     width: 19px;
     height: 20px;
-    background: url(../img/settings-icon.png) no-repeat -18px 0;
+    background: url(../img/settings-icon.png) no-repeat -18px 1px;
     cursor: pointer;
 }

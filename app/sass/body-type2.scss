@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size:  17px;
-    height:  100%;
-    width:  100%; 
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    font-size: 17px;
+    height: 100%;
+    width: 100%;
 }
 
 .wrap {
@@ -11,6 +11,7 @@ body {
     padding: 0 10px;
     @include clearfix;
 }
+
 .hidden_mod {
     overflow: hidden;
 }

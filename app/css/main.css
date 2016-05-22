@@ -45,7 +45,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Color for background */
 /* Color for border */
 body {
-  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica,"Nimbus Sans L", sans-serif;
   font-size: 17px;
   height: 100%;
   width: 100%; }
@@ -74,6 +74,7 @@ body {
     font-weight: bold;
     color: white;
     float: right;
+    background: #9fca38;
     background: linear-gradient(to top, #9fca38, #aedf39);
     box-shadow: -1px 1px  #c5c5c5;
     border-radius: 5px;
@@ -103,7 +104,7 @@ body {
     width: 470px;
     padding-top: 90px; }
     .intro_info-slogan {
-      font-family: Arial,Helvetica, sans-serif;
+      font-family: Arial,Helvetica,"Nimbus Sans L" sans-serif;
       font-size: 28px;
       font-weight: bold;
       text-transform: capitalize;
@@ -120,6 +121,7 @@ body {
       display: inline-block;
       padding: 20px 70px;
       border-radius: 5px;
+      background: #9fca38;
       background: linear-gradient(to top, #9fca38, #aedf39);
       box-shadow: -1px 1px  #c5c5c5;
       text-align: center;
@@ -133,12 +135,14 @@ body {
       .intro_info-button:active {
         box-shadow: inset 0 0 1px 0 white; }
       .intro_info-button-name {
+        display: block;
         font-size: 30px;
         color: white;
         font-weight: bold;
         padding-bottom: 5px;
         text-shadow: 1px 2px 6px #c5c5c5; }
       .intro_info-button-info {
+        display: block;
         font-size: 15px;
         color: black;
         font-weight: bold; }
@@ -160,8 +164,6 @@ body {
     width: 210px;
     text-align: left;
     margin-left: 158px; }
-    .advantage_item:first-child {
-      margin-left: 0; }
     .advantage_item img {
       display: block;
       margin-left: auto;
@@ -177,6 +179,8 @@ body {
       text-transform: uppercase;
       font-weight: bold;
       margin-bottom: 35px; }
+    .advantage_item:first-child {
+      margin-left: 0; }
 
 /* Footer */
 .footer {
@@ -200,11 +204,9 @@ body {
         color: black;
         text-decoration: underline; }
 
-/* Log in, registration and change password form */
 .hidden_mod {
   overflow: hidden; }
 
-/* This style hide or show modal window  */
 .modal {
   display: none;
   position: fixed;
@@ -224,6 +226,7 @@ body {
     box-shadow: 0 1px 5px #505050; }
   .modal_title {
     font-size: 17px;
+    background: #403d41;
     background: linear-gradient(to top, #403d41, #868386);
     width: 100%;
     padding: 8px;
@@ -243,18 +246,18 @@ body {
     position: relative; }
   .modal_text-input {
     display: block;
-    font-family: "Trebuchet MS",Helvetica, sans-serif;
+    font-family: "Trebuchet MS",Helvetica,Garuda, sans-serif;
     padding: 10px 10px;
     outline: none;
-    margin-bottom: 10px;
     padding-right: 30px;
     border: 1px solid #efefef;
     border-radius: 2px;
     width: 100%; }
   .modal_but {
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: Tahoma, Geneva,Kalimati, sans-serif;
     font-size: 22px;
     padding: 18px 0;
+    background: #9fca38;
     background: linear-gradient(to top, #9fca38, #aedf39);
     border: 0;
     position: relative;
@@ -286,9 +289,10 @@ body {
     font-size: 13px;
     text-decoration: underline !important;
     color: #7f7d81; }
-  .modal_relative-block {
+  .modal .mod-row {
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    margin-bottom: 10px; }
   .modal .reg_icons {
     position: absolute;
     top: 10px;

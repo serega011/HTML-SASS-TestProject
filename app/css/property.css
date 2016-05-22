@@ -45,7 +45,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Color for background */
 /* Color for border */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 17px;
   height: 100%;
   width: 100%; }
@@ -69,7 +69,7 @@ body {
   border-bottom: 5px solid #e0e0e0;
   min-width: 1040px;
   /* This class make a click effect for the button */ }
-  .header .wrap {
+  .header .mod-header {
     padding: 2px 20px; }
   .header_logo {
     font-size: 30px;
@@ -152,6 +152,15 @@ body {
     border-radius: 3px 3px 0 0;
     box-shadow: inset 1px 1px 0px #7D7D7D; }
 
+/* General part of page */
+.property-box:before, .property-box:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.property-box .mod-property-box {
+  padding: 0 20px 0 10px; }
+
 .add-button {
   font-size: 12px;
   border: 1px solid #c5c5c5;
@@ -159,8 +168,7 @@ body {
   padding: 0px 10px 8px 10px;
   border-radius: 3px;
   text-align: center;
-  outline: none;
-  float: right; }
+  outline: none; }
   .add-button_plus {
     display: inline-block;
     width: 20px;
@@ -170,19 +178,14 @@ body {
     top: 5px;
     margin-right: 5px; }
 
-/* General part of page */
-.property {
-  margin: 0 20px 0 10px; }
-  .property:before, .property:after {
+/* Sidebar */
+.sidebar {
+  float: left; }
+  .sidebar:before, .sidebar:after {
     content: "";
     clear: both;
     display: block; }
-
-/* Sidebar */
-.sidebar {
-  display: block; }
   .sidebar_top {
-    float: left;
     margin: 20px 0 10px 10px; }
     .sidebar_top-name {
       color: #9fca38;
@@ -226,11 +229,10 @@ body {
 
 /* Style for baron */
 .baron {
-  float: left;
   height: 830px;
-  width: 330px !important;
-  min-width: 330px !important;
-  max-width: 330px !important;
+  width: 330px;
+  min-width: 330px;
+  max-width: 330px;
   position: relative;
   overflow: hidden; }
   .baron__bar {
@@ -246,7 +248,8 @@ body {
   float: left;
   margin-left: 10px;
   width: 650px;
-  border: 1px solid #c5c5c5; }
+  border: 1px solid #c5c5c5;
+  margin-top: 65px; }
   .info_description {
     padding: 25px 25px 20px 30px;
     background: #F6F6F6;
@@ -305,7 +308,7 @@ body {
   background: red;
   width: 19px;
   height: 20px;
-  background: url(../img/settings-icon.png) no-repeat -18px 0;
+  background: url(../img/settings-icon.png) no-repeat -18px 1px;
   cursor: pointer; }
 
 /* Description part    */
@@ -332,7 +335,7 @@ body {
   .detail .mod-expenses {
     margin-left: 0px; }
   .detail .mod-overview {
-    margin-left: -4px; }
+    margin-left: -5px; }
   .detail .mod-contact {
     margin-left: -5px; }
   .detail input:checked + label {
@@ -399,6 +402,9 @@ body {
   .expenses_table tr:hover td {
     background: #efefef; }
 
+.expenses_button {
+  text-align: right; }
+
 .expenses_total {
   margin-top: 10px;
   border-radius: 3px;
@@ -423,7 +429,6 @@ body {
   .overview_table-wrap {
     border: 1px solid #c5c5c5;
     border-radius: 3px;
-    padding: 0 15px;
     margin-bottom: 10px; }
   .overview_table td {
     padding: 10px 0; }
@@ -492,21 +497,15 @@ body {
     color: black; }
 
 /* contact */
-.contacts:before, .contacts:after {
-  content: "";
-  clear: both;
-  display: block; }
-
 .contacts_contact {
   padding: 0 35px;
   background: #F6F6F6;
-  width: 49%;
-  float: left;
-  border-radius: 3px; }
+  width: 48%;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 0 3px; }
   .contacts_contact_bl {
     display: block; }
-  .contacts_contact:nth-child(odd) {
-    margin-right: 2%; }
   .contacts_contact-name {
     display: block;
     font-size: 18px;
@@ -545,7 +544,8 @@ body {
   .contacts_contact-mail, .contacts_contact-phone {
     font-size: 15px;
     font-weight: bold; }
-  .contacts_contact-mail i, .contacts_contact-phone i {
+  .contacts_contact-mail i,
+  .contacts_contact-phone i {
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -566,6 +566,9 @@ body {
   z-index: 100;
   overflow: auto; }
 
+.hidden_mod {
+  overflow: hidden; }
+
 .editing {
   width: 425px;
   margin: 10% auto;
@@ -581,10 +584,6 @@ body {
     border: 2px solid #efefef;
     border-radius: 2px;
     box-shadow: 0 0 0px 1px #c5c5c5, inset 0 0 0px 1px #c5c5c5; }
-  .editing .mod-max-width {
-    width: 206px; }
-  .editing .mod-min-width {
-    width: 110px; }
   .editing_thirst, .editing_second {
     padding: 20px 45px; }
   .editing_second {
@@ -594,16 +593,16 @@ body {
     font-weight: bold;
     font-size: 18px;
     margin-left: -10px; }
-  .editing label {
+  .editing_label {
     font-weight: bold;
     width: 120px;
     display: inline-block; }
-  .editing_select {
-    padding-left: 125px; }
-  .editing .mod_row {
+  .editing_row {
     padding-bottom: 20px; }
-  .editing_amount, .editing_company {
-    padding-bottom: 5px; }
+  .editing .mod-select {
+    padding-left: 125px; }
+  .editing .mod-pb8 {
+    padding-bottom: 8px; }
   .editing .date {
     display: inline-block; }
   .editing .input-group-addon {
@@ -614,16 +613,8 @@ body {
     font-size: 24px;
     cursor: pointer;
     padding: 0 3px; }
-  .editing_start-name {
-    font-weight: bold;
-    width: 120px;
-    display: inline-block; }
   .editing_paid input {
     display: none; }
-  .editing_paid-name {
-    font-weight: bold;
-    width: 120px;
-    display: inline-block; }
   .editing_paid label {
     width: 50px;
     background: #efefef;
@@ -639,28 +630,6 @@ body {
     border-radius: 0 5px 5px 0; }
   .editing_paid-check {
     background: #9C9C9C !important; }
-  .editing_upload {
-    padding-bottom: none; }
-    .editing_upload-name {
-      vertical-align: top;
-      font-weight: bold;
-      width: 120px;
-      display: inline-block; }
-  .editing_buttons {
-    text-align: center;
-    padding: 20px 0; }
-    .editing_buttons input[type="submit"], .editing_buttons button {
-      box-shadow: none;
-      border: 1px solid #c5c5c5;
-      outline: none;
-      width: 80px;
-      padding: 5px 0;
-      border-radius: 3px;
-      background: #efefef;
-      font-size: 12px; }
-      .editing_buttons input[type="submit"]:hover, .editing_buttons button:hover {
-        background: #9fca38;
-        cursor: pointer; }
   .editing_file-upload {
     display: inline-block;
     position: relative;
@@ -689,6 +658,27 @@ body {
     border: 1px solid #c5c5c5;
     padding: 5px;
     font-size: 12px; }
+  .editing_upload {
+    padding-bottom: none; }
+  .editing_buttons {
+    text-align: center;
+    padding: 20px 0; }
+    .editing_buttons button {
+      box-shadow: none;
+      border: 1px solid #c5c5c5;
+      outline: none;
+      width: 80px;
+      padding: 5px 0;
+      border-radius: 3px;
+      background: #efefef;
+      font-size: 12px; }
+      .editing_buttons button:hover {
+        background: #9fca38;
+        cursor: pointer; }
+  .editing .mod-max-width {
+    width: 206px; }
+  .editing .mod-min-width {
+    width: 110px; }
 
 /* Style for chosen plugin select */
 .chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {

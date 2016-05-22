@@ -1,18 +1,11 @@
 
-/* General part of page */
-
-.property {
-    margin: 0 20px 0 10px;
-    @include clearfix;
-}
-
 
 /* Sidebar */
 .sidebar {
-    display: block;
+    float: left;
+    @include clearfix;
     
     &_top {
-        float: left;
         margin: 20px 0 10px 10px;
 
         &-name {
@@ -71,11 +64,10 @@
 
 /* Style for baron */
 .baron {
-    float: left;
     height: 830px;
-    width: 330px !important;
-    min-width:  330px !important;
-    max-width:  330px !important;
+    width: 330px;
+    min-width:  330px;
+    max-width:  330px;
     position: relative;
     overflow: hidden;
 

@@ -14,13 +14,6 @@
         box-shadow: 0 0 0px 1px $contur,inset 0 0 0px 1px $contur;
     }
 
-    .mod-max-width {
-        width:206px;
-    }
-    .mod-min-width{
-        width:110px;
-    }
-
     &_thirst,&_second {padding: 20px 45px;}
 
     &_second {border-top: 1px solid $contur;}
@@ -32,17 +25,17 @@
         margin-left: -10px;
     }
 
-    label{
+    &_label{
         font-weight: bold;
         width: 120px;
         display: inline-block;
     }
 
-    &_select {padding-left: 125px;}
+    &_row {padding-bottom: 20px;}
 
-    .mod_row {padding-bottom: 20px;}
+    .mod-select {padding-left: 125px;}
 
-    &_amount, &_company{padding-bottom: 5px;}
+    .mod-pb8{padding-bottom: 8px;}
     
 /* Style for the datepicker */
 
@@ -59,24 +52,9 @@
     }
 /* Style for the datepicker */
 
-    &_start{
-
-        &-name{
-            font-weight: bold;
-            width: 120px;
-            display: inline-block;
-        }
-    }
-
     &_paid {
 
         input {display: none;}
-
-        &-name {
-            font-weight: bold;
-            width: 120px;
-            display: inline-block;
-        }
 
         label {
             width: 50px;
@@ -97,39 +75,6 @@
 
         &-check {background: #9C9C9C !important;}
         
-    }
-
-    &_upload {
-        padding-bottom: none;
-
-        &-name {
-            vertical-align: top;
-            font-weight: bold;
-            width: 120px;
-            display: inline-block;
-        }
-    }
-
-   
-    &_buttons {
-        text-align: center;
-        padding: 20px 0;
-
-        input[type = "submit"],button {
-            box-shadow: none;
-            border: 1px solid $contur;
-            outline: none;
-            width: 80px;
-            padding: 5px 0;
-            border-radius: 3px;
-            background: $rear;
-            font-size: 12px;
-
-            &:hover {
-                background: $color;
-                cursor: pointer;
-            }
-        }
     }
 
     &_file {
@@ -171,6 +116,38 @@
             padding: 5px; 
             font-size: 12px;
         }
+    }
+
+    &_upload {padding-bottom: none;}
+
+   
+    &_buttons {
+        text-align: center;
+        padding: 20px 0;
+
+        button {
+            box-shadow: none;
+            border: 1px solid $contur;
+            outline: none;
+            width: 80px;
+            padding: 5px 0;
+            border-radius: 3px;
+            background: $rear;
+            font-size: 12px;
+
+            &:hover {
+                background: $color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .mod-max-width {
+    width:206px;
+    }
+
+    .mod-min-width{
+        width:110px;
     }
 }
 

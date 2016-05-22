@@ -4,17 +4,17 @@ $(document).ready(function(){
 
     $('.header_button-log').click(function(){
         modal.fadeIn(600);
-        $('.modal_login').fadeIn(600);
+        $('.login').fadeIn(600);
         $('body').toggleClass('hidden_mod');
     });
     $('.intro_info-button').click(function(){
         modal.fadeIn(600);
-        $('.modal_reg').fadeIn(600);
+        $('.registration').fadeIn(600);
         $('body').toggleClass('hidden_mod');
     });
     $('#forgot').click(function(){
-        $('.modal_login').fadeOut(400);
-        $('.modal_pass').delay(400).fadeIn(400);
+        $('.login').fadeOut(400);
+        $('.change-password').delay(400).fadeIn(400);
         $('body').toggleClass('hidden_mod');
     });
     

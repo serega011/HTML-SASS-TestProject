@@ -64,6 +64,10 @@
         tr:hover td {background: $rear;}
     }
 
+    &_button {
+        text-align: right;
+    }
+
     &_total {
         margin-top: 10px;
         border-radius:  3px;

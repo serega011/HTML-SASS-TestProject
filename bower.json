@@ -13,5 +13,8 @@
     "Bulgakov Konstantin <nor.wanderer@gmail.com>"
   ],
   "main": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "html5shiv": "^3.7.3"
+  }
 }

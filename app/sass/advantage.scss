@@ -6,12 +6,10 @@
     padding: 90px 0px;
 
     &_item{
-    display: inline-block;
-    width: 210px;
-    text-align: left;
-    margin-left: 158px;
-    
-        &:first-child{margin-left: 0}
+        display: inline-block;
+        width: 210px;
+        text-align: left;
+        margin-left: 158px;
         
         img{
             display: block;
@@ -33,6 +31,8 @@
             font-weight: bold;
             margin-bottom: 35px;
         }
+
+        &:first-child{margin-left: 0}
     }
 }
 
