@@ -222,6 +222,10 @@ body {
     margin: 10% auto;
     display: none;
     width: 300px; }
+  .modal_row {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 10px; }
   .modal_shadow {
     box-shadow: 0 1px 5px #505050; }
   .modal_title {
@@ -289,10 +293,6 @@ body {
     font-size: 13px;
     text-decoration: underline !important;
     color: #7f7d81; }
-  .modal .mod-row {
-    position: relative;
-    z-index: 10;
-    margin-bottom: 10px; }
   .modal .reg_icons {
     position: absolute;
     top: 10px;
