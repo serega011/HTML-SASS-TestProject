@@ -5,7 +5,7 @@
     border: 1px solid $color;
     padding-top: 45px;
 
-    input[type = "text"],select {
+    &_inp{
         display:inline-block;
         font-size: 13px;
         padding: 4px 2px;
@@ -36,21 +36,6 @@
     .mod-select {padding-left: 125px;}
 
     .mod-pb8{padding-bottom: 8px;}
-    
-/* Style for the datepicker */
-
-    .date {display: inline-block;}
-
-    .input-group-addon {
-        display: inline-block;
-        color: $color;
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 0 3px;
-    }
-/* Style for the datepicker */
 
     &_paid {
 
@@ -150,6 +135,21 @@
         width:110px;
     }
 }
+
+/* Style for the datepicker */
+
+.date {display: inline-block;}
+
+.input-group-addon {
+    display: inline-block;
+    color: $color;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 3px;
+}
+
 
 /* Style for chosen plugin select */
 .chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {

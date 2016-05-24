@@ -52,8 +52,8 @@
             transition:all 1s;
             
             &:hover{
-            background: #aedf39;
-            background: linear-gradient(to bottom, $color, #aedf39);
+                background: #aedf39;
+                background: linear-gradient(to bottom, $color, #aedf39);
             }
             
             &:active{

@@ -1,6 +1,7 @@
 /* Expenses */
 
 .expenses  {
+    display:none;
 
     &_wrap-table  {
     border: 1px solid $contur;
@@ -64,9 +65,7 @@
         tr:hover td {background: $rear;}
     }
 
-    &_button {
-        text-align: right;
-    }
+    &_button {text-align: right;}
 
     &_total {
         margin-top: 10px;

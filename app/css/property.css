@@ -312,17 +312,12 @@ body {
   cursor: pointer; }
 
 /* Description part    */
-.detail {
+.tabs {
   padding: 10px;
   background: #efefef; }
-  .detail > div {
-    padding: 25px 20px;
-    border: 1px solid #9fca38;
-    display: none;
-    background: white; }
-  .detail input {
-    display: none; }
-  .detail label {
+  .tabs_wr {
+    font-size: 0px; }
+  .tabs_button {
     display: inline-block;
     width: 80px;
     margin-bottom: -1px;
@@ -331,229 +326,222 @@ body {
     text-align: center;
     border: 1px solid #c5c5c5;
     background: #efefef;
-    border-radius: 3px 3px 0 0; }
-  .detail .mod-expenses {
-    margin-left: 0px; }
-  .detail .mod-overview {
-    margin-left: -5px; }
-  .detail .mod-contact {
-    margin-left: -5px; }
-  .detail input:checked + label {
+    border-radius: 3px 3px 0 0;
+    cursor: pointer; }
+  .tabs .tabs_box-wrap {
+    padding: 25px 20px;
+    border: 1px solid #9fca38;
+    background: white;
+    height: 665px;
+    min-height: 665px; }
+  .tabs .mod-box-active {
+    display: block; }
+  .tabs .mod-active {
     border: 1px solid #9fca38;
     border-bottom: 1px solid white;
     background: white; }
-  .detail #expenses:checked ~ .expenses,
-  .detail #overview:checked ~ .overview,
-  .detail #contact:checked ~ .contacts {
-    display: block; }
-
-.expenses, .overview, .contacts {
-  height: 665px;
-  min-height: 665px; }
 
 /* Expenses */
-.expenses_wrap-table {
-  border: 1px solid #c5c5c5;
-  border-radius: 5px;
-  margin-bottom: 10px; }
-
-.expenses_table {
-  font-size: 13px;
-  width: 100%;
-  text-align: left; }
-  .expenses_table td {
-    padding: 5px 0; }
-  .expenses_table td:first-child {
-    padding-left: 20px; }
-  .expenses_table tbody {
-    width: 100%; }
-  .expenses_table-topic th {
-    font-weight: bold;
-    padding: 10px 0;
-    background: #efefef; }
-    .expenses_table-topic th:first-child {
+.expenses {
+  display: none; }
+  .expenses_wrap-table {
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    margin-bottom: 10px; }
+  .expenses_table {
+    font-size: 13px;
+    width: 100%;
+    text-align: left; }
+    .expenses_table td {
+      padding: 5px 0; }
+    .expenses_table td:first-child {
       padding-left: 20px; }
-  .expenses_table-confirm i {
-    cursor: pointer;
-    display: block;
-    width: 15px;
-    height: 20px;
-    background: url(../img/confirm.png) no-repeat; }
-  .expenses_table-file i {
-    display: block;
-    width: 15px;
-    height: 20px;
-    background: url(../img/format.png) no-repeat; }
-  .expenses_table-edit {
-    display: block;
-    opacity: 0; }
-  .expenses_table-uninstall {
-    display: block;
-    opacity: 0;
-    width: 16px;
-    height: 20px;
-    background: url(../img/settings-icon.png) no-repeat -93px;
-    position: relative;
-    top: -3px;
-    margin-left: 10px;
-    cursor: pointer; }
-  tr:hover .expenses_table-edit, tr:hover .expenses_table-uninstall {
-    opacity: 1; }
-  .expenses_table tr:hover td {
-    background: #efefef; }
-
-.expenses_button {
-  text-align: right; }
-
-.expenses_total {
-  margin-top: 10px;
-  border-radius: 3px;
-  padding: 10px 15px 12px;
-  background: #f6f9e5; }
-  .expenses_total:before, .expenses_total:after {
-    content: "";
-    clear: both;
-    display: block; }
-  .expenses_total-name {
-    float: right;
-    font-weight: bold;
-    font-size: 13; }
-  .expenses_total-amount {
-    font-size: 24px; }
+    .expenses_table tbody {
+      width: 100%; }
+    .expenses_table-topic th {
+      font-weight: bold;
+      padding: 10px 0;
+      background: #efefef; }
+      .expenses_table-topic th:first-child {
+        padding-left: 20px; }
+    .expenses_table-confirm i {
+      cursor: pointer;
+      display: block;
+      width: 15px;
+      height: 20px;
+      background: url(../img/confirm.png) no-repeat; }
+    .expenses_table-file i {
+      display: block;
+      width: 15px;
+      height: 20px;
+      background: url(../img/format.png) no-repeat; }
+    .expenses_table-edit {
+      display: block;
+      opacity: 0; }
+    .expenses_table-uninstall {
+      display: block;
+      opacity: 0;
+      width: 16px;
+      height: 20px;
+      background: url(../img/settings-icon.png) no-repeat -93px;
+      position: relative;
+      top: -3px;
+      margin-left: 10px;
+      cursor: pointer; }
+    tr:hover .expenses_table-edit, tr:hover .expenses_table-uninstall {
+      opacity: 1; }
+    .expenses_table tr:hover td {
+      background: #efefef; }
+  .expenses_button {
+    text-align: right; }
+  .expenses_total {
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 10px 15px 12px;
+    background: #f6f9e5; }
+    .expenses_total:before, .expenses_total:after {
+      content: "";
+      clear: both;
+      display: block; }
+    .expenses_total-name {
+      float: right;
+      font-weight: bold;
+      font-size: 13; }
+    .expenses_total-amount {
+      font-size: 24px; }
 
 /* Overview */
-.overview_table {
-  width: 100%;
-  text-align: left;
-  font-size: 15px; }
-  .overview_table-wrap {
-    border: 1px solid #c5c5c5;
-    border-radius: 3px;
-    margin-bottom: 10px; }
-  .overview_table td {
-    padding: 10px 0; }
-  .overview_table tr td {
-    width: 120px; }
-  .overview_table tr td.mod-bold {
+.overview {
+  display: none; }
+  .overview_table {
+    width: 100%;
+    text-align: left;
+    font-size: 15px; }
+    .overview_table-wrap {
+      border: 1px solid #c5c5c5;
+      border-radius: 3px;
+      margin-bottom: 10px; }
+    .overview_table td {
+      padding: 10px 0; }
+    .overview_table tr td {
+      width: 120px; }
+    .overview_table tr td.mod-bold {
+      font-weight: bold; }
+    .overview_table tr .mod-auto {
+      width: auto; }
+  .overview_growth tr td {
+    font-weight: normal;
+    text-align: center; }
+  .overview_growth .tr-bold td {
     font-weight: bold; }
-  .overview_table tr .mod-auto {
-    width: auto; }
-
-.overview_growth tr td {
-  font-weight: normal;
-  text-align: center; }
-
-.overview_growth .tr-bold td {
-  font-weight: bold; }
-
-.overview_valuation {
-  display: block;
-  margin-bottom: 20px; }
-  .overview_valuation-date {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 10px; }
-
-.overview_title {
-  font-size: 13px;
-  font-weight: bold;
-  color: white;
-  background: #9fca38;
-  padding: 3px 15px 7px;
-  border-radius: 3px;
-  line-height: 18px;
-  margin: 10px 0 15px; }
-  .overview_title i {
-    cursor: pointer;
-    position: relative;
-    margin-left: 10px;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    top: 4px;
-    background: url(../img/settings-icon.png) no-repeat -123px; }
-
-.overview_total {
-  background: #f6f9e5;
-  border-radius: 3px;
-  padding: 10px 15px 12px; }
-  .overview_total:before, .overview_total:after {
-    content: "";
-    clear: both;
-    display: block; }
-  .overview_total-name, .overview_total-altname {
-    display: inline-block;
+  .overview_valuation {
+    display: block;
+    margin-bottom: 20px; }
+    .overview_valuation-date {
+      font-size: 15px;
+      font-weight: bold;
+      margin-left: 10px; }
+  .overview_title {
     font-size: 13px;
-    font-weight: bold; }
-  .overview_total-number {
-    position: relative;
-    top: 2px;
-    color: #9fca38;
-    font-size: 24px;
-    margin-left: 10px; }
-  .overview_total-name {
-    float: right; }
-  .overview_total .mod-number-black {
-    color: black; }
+    font-weight: bold;
+    color: white;
+    background: #9fca38;
+    padding: 3px 15px 7px;
+    border-radius: 3px;
+    line-height: 18px;
+    margin: 10px 0 15px; }
+    .overview_title i {
+      cursor: pointer;
+      position: relative;
+      margin-left: 10px;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      top: 4px;
+      background: url(../img/settings-icon.png) no-repeat -123px; }
+  .overview_total {
+    background: #f6f9e5;
+    border-radius: 3px;
+    padding: 10px 15px 12px; }
+    .overview_total:before, .overview_total:after {
+      content: "";
+      clear: both;
+      display: block; }
+    .overview_total-name, .overview_total-altname {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: bold; }
+    .overview_total-number {
+      position: relative;
+      top: 2px;
+      color: #9fca38;
+      font-size: 24px;
+      margin-left: 10px; }
+    .overview_total-name {
+      float: right; }
+    .overview_total .mod-number-black {
+      color: black; }
 
 /* contact */
-.contacts_contact {
-  padding: 0 35px;
-  background: #F6F6F6;
-  width: 48%;
-  display: inline-block;
-  border-radius: 3px;
-  margin: 0 3px; }
-  .contacts_contact_bl {
-    display: block; }
-  .contacts_contact-name {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 40px; }
-  .contacts_contact-popup {
-    display: none;
-    width: 100%;
-    background: white;
-    padding: 10px;
-    position: absolute;
-    bottom: 22px;
-    left: 0;
-    box-shadow: 0px 0px 20px 3px #c5c5c5; }
-    .contacts_contact-popup::after {
-      content: "";
-      position: absolute;
-      border: 10px solid transparent;
-      border-top: 10px solid white;
-      bottom: -16px;
-      left: 15px; }
-  .contacts_contact-post {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding: 5px 0;
-    font-size: 13px;
-    color: #999; }
-    .contacts_contact-post:hover .contacts_contact-popup {
-      display: block; }
-  .contacts_contact-mail {
-    margin-top: 25px;
-    color: #9fca38; }
-  .contacts_contact-phone {
-    margin-bottom: 30px; }
-  .contacts_contact-mail, .contacts_contact-phone {
-    font-size: 15px;
-    font-weight: bold; }
-  .contacts_contact-mail i,
-  .contacts_contact-phone i {
-    width: 18px;
-    height: 18px;
+.contacts {
+  display: none; }
+  .contacts_contact {
+    padding: 0 35px;
+    background: #F6F6F6;
+    width: 48%;
     display: inline-block;
-    font-weight: bold;
-    color: #999;
-    margin-right: 5px; }
-  .contacts_contact-phone i {
-    background: url(../img/settings-icon.png) no-repeat -108px; }
+    border-radius: 3px;
+    margin: 0 3px; }
+    .contacts_contact_bl {
+      display: block; }
+    .contacts_contact-name {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 40px; }
+    .contacts_contact-popup {
+      display: none;
+      width: 100%;
+      background: white;
+      padding: 10px;
+      position: absolute;
+      bottom: 22px;
+      left: 0;
+      box-shadow: 0px 0px 20px 3px #c5c5c5; }
+      .contacts_contact-popup::after {
+        content: "";
+        position: absolute;
+        border: 10px solid transparent;
+        border-top: 10px solid white;
+        bottom: -16px;
+        left: 15px; }
+    .contacts_contact-post {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      padding: 5px 0;
+      font-size: 13px;
+      color: #999; }
+      .contacts_contact-post:hover .contacts_contact-popup {
+        display: block; }
+    .contacts_contact-mail {
+      margin-top: 25px;
+      color: #9fca38; }
+    .contacts_contact-phone {
+      margin-bottom: 30px; }
+    .contacts_contact-mail, .contacts_contact-phone {
+      font-size: 15px;
+      font-weight: bold; }
+    .contacts_contact-mail i,
+    .contacts_contact-phone i {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      font-weight: bold;
+      color: #999;
+      margin-right: 5px; }
+    .contacts_contact-phone i {
+      background: url(../img/settings-icon.png) no-repeat -108px; }
 
 .modal {
   position: fixed;
@@ -574,10 +562,8 @@ body {
   margin: 10% auto;
   background: white;
   border: 1px solid #9fca38;
-  padding-top: 45px;
-  /* Style for the datepicker */
-  /* Style for the datepicker */ }
-  .editing input[type="text"], .editing select {
+  padding-top: 45px; }
+  .editing_inp {
     display: inline-block;
     font-size: 13px;
     padding: 4px 2px;
@@ -603,16 +589,6 @@ body {
     padding-left: 125px; }
   .editing .mod-pb8 {
     padding-bottom: 8px; }
-  .editing .date {
-    display: inline-block; }
-  .editing .input-group-addon {
-    display: inline-block;
-    color: #9fca38;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 0 3px; }
   .editing_paid input {
     display: none; }
   .editing_paid label {
@@ -679,6 +655,19 @@ body {
     width: 206px; }
   .editing .mod-min-width {
     width: 110px; }
+
+/* Style for the datepicker */
+.date {
+  display: inline-block; }
+
+.input-group-addon {
+  display: inline-block;
+  color: #9fca38;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 3px; }
 
 /* Style for chosen plugin select */
 .chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {

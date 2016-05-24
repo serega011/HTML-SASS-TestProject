@@ -1,0 +1,37 @@
+
+/* Description part    */ 
+
+.tabs {
+    padding: 10px;
+    background: $rear;
+
+    &_wr {font-size: 0px;}
+
+    &_button{
+        display: inline-block;
+        width: 80px;
+        margin-bottom: -1px;
+        padding: 10px 15px;
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid $contur;
+        background: $rear;
+        border-radius: 3px 3px 0 0;
+        cursor: pointer;
+    }
+
+    .tabs_box-wrap{
+        padding: 25px 20px;
+        border: 1px solid $color;
+        background:white;
+        height: 665px;
+        min-height: 665px;
+    }
+
+    .mod-box-active {display: block;}
+    .mod-active {
+        border: 1px solid $color;
+        border-bottom: 1px solid white;
+        background: white;
+    }
+}
