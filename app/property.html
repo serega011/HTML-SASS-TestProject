@@ -171,7 +171,7 @@
                         <li class="tabs_button" data-tab = "contacts">contacts</li>
                     </ul>
                     <div class="tabs_box-wrap">
-                        <div class="expenses mod-box mod-box-active" data-for-tab = "expenses">
+                        <div class="expenses mod-box-active" data-for-tab = "expenses">
                             <div class="expenses_wrap-table">
                                 <table class="expenses_table">
                                     <thead>
@@ -227,7 +227,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="overview mod-box" data-for-tab = "overview">
+                        <div class="overview" data-for-tab = "overview">
                             <div class="overview_lease">
                                 <div class="overview_title">Lease Details<i></i></div>
                                 <table class="overview_table">
@@ -301,7 +301,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts mod-box" data-for-tab = "contacts">
+                        <div class="contacts" data-for-tab = "contacts">
                             <div class="contacts_contact">
                                 <p class="contacts_contact-name ">Michelle Willams</p>
                                 <div class="contacts_contact-post ">Owner
@@ -331,7 +331,7 @@
                     <p class="editing_name ">Edit Recurrent Payment</p>
                     <div class=" editing_row mod-pb8">
                         <label class="editing_label" for="amount">Amount</label>
-                        <input class="mod-min-width" id="amount" type="text">
+                        <input class="editing_inp mod-min-width" id="amount" type="text">
                         <span>$</span>
                     </div>
                     <div class="mod-select editing_row">
@@ -348,16 +348,16 @@
                     </div>
                     <div class="editing_row mod-pb8">
                         <label class="editing_label" for="company">Company </label>
-                        <input class="mod-max-width" id="company" type="text">
+                        <input class="editing_inp mod-max-width" id="company" type="text">
                     </div>
                     <div class="editing_row">
                         <label class="editing_label" for="category">Category</label>
-                        <input class="mod-max-width" id="category" type="text">
+                        <input class="editing_inp mod-max-width" id="category" type="text">
                     </div>
                     <div class="editing_row ">
                         <label class="editing_label" for="paydate">Payment Date</label>
                         <div class="date" id='datetimepicker1'>
-                            <input class="mod-min-width" id="paydate" type="text">
+                            <input class="editing_inp mod-min-width" id="paydate" type="text">
                             <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
                             </span>
@@ -389,7 +389,7 @@
                     <div class="editing_row mod-pb8">
                         <label class="editing_label" for="end">End Date</label>
                         <div class="date" id='datetimepicker2'>
-                            <input class="mod-min-width" id="end" type="text">
+                            <input class="editing_inp mod-min-width" id="end" type="text">
                             <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
                             </span>
