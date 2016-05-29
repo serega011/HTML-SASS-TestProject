@@ -22,16 +22,16 @@ $(document).ready(function() {
         };
     });
 
-    $('.tabs_wr').click(function(e){
-    event = e || window.event;
-    var target = $(event.target) || $(event.srcElement);
-    
-    var dataName = target.data('tab');
-    $(this).children().removeClass("mod-active");
-    target.addClass('mod-active');
-    $('.tabs_box-wrap').children().removeClass('mod-box-active');
-    $('[data-for-tab =' + dataName + ']').addClass('mod-box-active');
-    
+    $('.tabs_wr').click(function(e) {
+        event = e || window.event;
+        var target = $(event.target) || $(event.srcElement);
+
+        var dataName = target.data('tab');
+        $(this).children().removeClass("mod-active");
+        target.addClass('mod-active');
+        $('.tabs_box-wrap').children().removeClass('mod-box-active');
+        $('[data-for-tab =' + dataName + ']').addClass('mod-box-active');
+
     })
 
     $('.editing_paid input').click(function() {
@@ -41,10 +41,11 @@ $(document).ready(function() {
 
 
     /*Bihavior for upload input*/
-    var wrapper = $(".editing_file-upload"),
+    var wrapper = $(".editing_file-wrap"),
         inp = wrapper.find("input"),
         btn = wrapper.find(".editing_file-button"),
-        lbl = wrapper.find(".editing_file-mark");
+        info = wrapper.find(".editing_file-none"),
+        lbl = wrapper.find(".editing_file-marks");
 
     var file_api = (window.File && window.FileReader && window.FileList && window.Blob) ? true : false;
 
@@ -59,14 +60,25 @@ $(document).ready(function() {
             return;
 
         if (lbl.is(":visible")) {
-            lbl.text(file_name);
+            lbl.append('<div class = "editing_file-mark"><p class = "editing_file-text">' + file_name + '</p><i class = editing_file-icon></i></div>');
             btn.text("Select...");
+            info.remove();
         } else
             btn.text(file_name);
     }).change();
 
     $(window).resize(function() {
         $(".editing_file-upload").triggerHandler("change");
+    });
+
+
+
+    $('.editing_file-marks').click(function(e) {
+        event = e || window.event;
+        var target = $(event.target) || $(event.srcElement);
+        if (target.hasClass('editing_file-icon')) {
+            target.parent().remove();
+        }
     });
 
     /* Settings for chosen plugin*/

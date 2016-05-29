@@ -607,23 +607,35 @@ body {
   .editing_paid-check {
     background: #9C9C9C !important; }
   .editing_file-upload {
-    display: inline-block;
-    position: relative;
-    width: 206px;
     vertical-align: top; }
     .editing_file-upload input[type="file"] {
       position: absolute;
       top: 0;
       opacity: 0; }
+  .editing_file-wrap {
+    display: inline-block;
+    width: 206px; }
   .editing_file-button, .editing_file-mark {
     font-weight: normal;
     display: block;
     cursor: pointer; }
   .editing_file-mark {
+    padding-bottom: 5px; }
+  .editing_file-text {
+    display: inline-block;
+    max-width: 160px;
     white-space: nowrap;
-    width: 206px;
     text-overflow: ellipsis;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+  .editing_file-icon {
+    position: relative;
+    bottom: 2px;
+    display: inline-block;
+    margin-left: 10px;
+    width: 13px;
+    height: 13px;
+    background: url(../img/cross.png); }
   .editing_file-button {
     margin-top: 10px;
     width: 80px;
@@ -634,6 +646,8 @@ body {
     border: 1px solid #c5c5c5;
     padding: 5px;
     font-size: 12px; }
+    .editing_file-button:hover {
+      background: #9fca38; }
   .editing_upload {
     padding-bottom: none; }
   .editing_buttons {
