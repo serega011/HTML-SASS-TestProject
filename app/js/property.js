@@ -29,12 +29,13 @@ $(document).ready(function() {
     $('.tabs_wr').click(function(e) {
         event = e || window.event;
         var target = $(event.target) || $(event.srcElement);
-
-        var dataName = target.data('tab');
-        $(this).children().removeClass("mod-active");
-        target.addClass('mod-active');
-        $('.tabs_box-wrap').children().removeClass('mod-box-active');
-        $('[data-for-tab =' + dataName + ']').addClass('mod-box-active');
+        if(target.hasClass('tabs_button')){
+            var dataName = target.data('tab');
+            $(this).children().removeClass("mod-active");
+            target.addClass('mod-active');
+            $('.tabs_box-wrap').children().removeClass('mod-box-active');
+            $('[data-for-tab =' + dataName + ']').addClass('mod-box-active');
+        }   
 
     })
 
