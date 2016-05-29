@@ -566,7 +566,7 @@ body {
   .editing_inp {
     display: inline-block;
     font-size: 13px;
-    padding: 4px 2px;
+    padding: 4px 5px;
     border: 2px solid #efefef;
     border-radius: 2px;
     box-shadow: 0 0 0px 1px #c5c5c5, inset 0 0 0px 1px #c5c5c5; }
@@ -685,6 +685,7 @@ body {
 
 /* Style for chosen plugin select */
 .chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {
+  padding-left: 5px;
   height: 26px;
   background: transparent;
   font-size: 13px;

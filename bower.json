@@ -2,11 +2,10 @@
   "name": "testproject",
   "description": "",
   "dependencies": {
-    "animate.css": "^3.5.1",
-    "font-awesome": "^4.5.0",
     "jquery": "^2.2.3",
     "bootstrap": "^3.3.6",
-    "chosen": "^1.5.1"
+    "chosen": "^1.5.1",
+    "html5shiv": "^3.7.3"
   },
   "homepage": "https://github.com/Tadjo/TestProject",
   "authors": [
@@ -14,7 +13,5 @@
   ],
   "main": "",
   "license": "MIT",
-  "devDependencies": {
-    "html5shiv": "^3.7.3"
-  }
+  "devDependencies": {}
 }

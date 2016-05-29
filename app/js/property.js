@@ -1,13 +1,15 @@
 $(document).ready(function() {
 
-    $('.header_setting-but').click(function() {
+    /* This function for setting menu*/
 
+    $('.header_setting-but').click(function() {
         $('.header_setting-menu').slideToggle(200);
         $('.header_setting-but').toggleClass('active');
     })
 
-    var filter = $('.modal')
+    /*This functions for modal window*/
 
+    var filter = $('.modal')
     $('.expenses .edit').click(function() {
         filter.fadeIn(600);
         $('body').toggleClass('hidden_mod');
@@ -22,6 +24,8 @@ $(document).ready(function() {
         };
     });
 
+    /*this function describe the bihavior for tabs*/
+    
     $('.tabs_wr').click(function(e) {
         event = e || window.event;
         var target = $(event.target) || $(event.srcElement);
@@ -34,6 +38,8 @@ $(document).ready(function() {
 
     })
 
+    /*This click function for yes/no button in modal form*/
+
     $('.editing_paid input').click(function() {
         $('.editing_paid label').removeClass('editing_paid-check')
         $(this).parent().toggleClass('editing_paid-check')
@@ -41,6 +47,7 @@ $(document).ready(function() {
 
 
     /*Bihavior for upload input*/
+
     var wrapper = $(".editing_file-wrap"),
         inp = wrapper.find("input"),
         btn = wrapper.find(".editing_file-button"),
@@ -97,6 +104,7 @@ $(document).ready(function() {
 
 });
 
+/* This onload function initialize the baron scrollbar and datepickers*/
 
 window.onload = function() {
     baron({
